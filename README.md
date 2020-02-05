@@ -18,4 +18,5 @@ Install react-landing-page libraries:
 npm i react-landing-page
 npm i rebass@next
 npm i styled-components
+npm install --save react-responsive-menubar
 ```
