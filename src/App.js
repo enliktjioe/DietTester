@@ -2,23 +2,35 @@ import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Redirect, Route, Switch} from "react-router-dom";
 import {Home} from "./home/Home";
+import {DietPlan} from "./dietplan/DietPlan";
 import LoggedInHome from "./loggedin/LoggedInHome";
-import {NavBar} from "./navbar/NavBar";
+import {DailySurvey} from "./survey/DailySurvey";
+import NavBar from "./navbar/NavBar";
+import Menu from "./menu/Menu";
+import ShoppingList from "./shoppinglist/ShoppingList"
 
 class App extends React.Component {
+
     render() {
         return (
+
             <Router>
-                <div>
-                    <Switch>
-                        <Route exact path="/diet-tester" component={Home}>
-                            <Redirect to="/diet-tester/home"/>
-                        </Route>
-                        <Route path="/diet-tester/home" exact component={Home}/>
-                        <Route path="/diet-tester/logged-in-home" exact component={LoggedInHome}/>
-                        <Route path="/diet-tester/navbar" exact component={NavBar}/>
-                    </Switch>
-                </div>
+                <NavBar/>
+
+                <Switch>
+                    <Route exact path="/" component={Home}>
+                        <Redirect to="/home"/>
+                    </Route>
+                    <Route path="/home" exact component={Home}/>
+                    <Route path="/logged-in-home" exact component={LoggedInHome}/>
+                    <Route path="/navbar" exact component={NavBar}/>
+                    <Route path="/diet-plan" exact component={DietPlan}/>
+                    <Route path="/daily-survey" exact component={DailySurvey}/>
+
+                    <Route path="/menu" exact component={Menu}/>
+                    <Route path="/shopping-list" exact component={ShoppingList}/>
+                </Switch>
+
             </Router>
         );
     }

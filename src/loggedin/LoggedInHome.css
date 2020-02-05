@@ -1,0 +1,19 @@
+body {
+  /*  background-image: url("../resources/watercolor-backgrounds-11.jpg");*/
+}
+
+h1 {
+    text-align: center;
+}
+
+.margin-6vh {
+    margin-top: 6vh;
+}
+
+#logged-in-home-container {
+    margin-top: 9vh;
+}
+
+#diets {
+    margin: 8% 20% 10%;
+}
