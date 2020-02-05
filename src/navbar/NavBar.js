@@ -2,7 +2,6 @@ import * as React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
 
 export class NavBar extends React.Component {
     render() {
@@ -30,7 +29,7 @@ export class NavBar extends React.Component {
                     </Navbar>
                 </header>
             </div>
-        )
+        );
     }
 }
 
