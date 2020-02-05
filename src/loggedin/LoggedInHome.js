@@ -1,7 +1,6 @@
 import * as React from "react";
 import './LoggedInHome.css'
 import Button from "react-bootstrap/Button";
-import {DropdownDivider} from "react-bootstrap/Dropdown";
 
 export class LoggedInHome extends React.Component {
 

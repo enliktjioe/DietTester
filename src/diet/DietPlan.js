@@ -1,6 +1,7 @@
 import * as React from "react";
 import './DietPlan.css'
 import {Alert} from "react-bootstrap";
+import Button from "react-bootstrap/Button";
 
 export class DietPlan extends React.Component {
 
@@ -12,8 +13,9 @@ export class DietPlan extends React.Component {
                         Vegan
                     </h1>
                     <Alert variant="success">
-                        Siin on toitumiskava
+                        Diet plan goes here
                     </Alert>
+                    <Button href="/logged-in-home" variant="outline-info" size="lg" block>Back</Button>
                 </div>
             </div>
         )

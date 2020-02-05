@@ -13,12 +13,12 @@ class App extends React.Component {
             <Router>
                 <Switch>
                     <Route exact path="/" component={Home}>
-                        <Redirect to="/diet-tester/home"/>
+                        <Redirect to="/home"/>
                     </Route>
-                    <Route path="/diet-tester/home" exact component={Home}/>
-                    <Route path="/diet-tester/logged-in-home" exact component={LoggedInHome}/>
-                    <Route path="/diet-tester/navbar" exact component={NavBar}/>
-                    <Route path="/diet-tester/diet-plan" exact component={DietPlan}/>
+                    <Route path="/home" exact component={Home}/>
+                    <Route path="/logged-in-home" exact component={LoggedInHome}/>
+                    <Route path="/navbar" exact component={NavBar}/>
+                    <Route path="/diet-plan" exact component={DietPlan}/>
                 </Switch>
             </Router>
         );
