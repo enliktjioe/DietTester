@@ -4,7 +4,6 @@ import {BrowserRouter as Router, Redirect, Route, Switch} from "react-router-dom
 import {Home} from "./home/Home";
 import {DietPlan} from "./diet/DietPlan";
 import LoggedInHome from "./loggedin/LoggedInHome";
-import {NavBar} from "./navbar/NavBar";
 import {DailySurvey} from "./survey/DailySurvey";
 import NavBar from "./navbar/NavBar";
 import Menu from "./menu/Menu";
