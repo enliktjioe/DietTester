@@ -3,6 +3,11 @@ import Alert from "react-bootstrap/Alert";
 import {Button} from "react-bootstrap";
 import {useState} from "react";
 
+import { Provider, Heading, Subhead } from 'rebass'
+import {
+  Hero, CallToAction, ScrollDownIndicator
+} from 'react-landing-page'
+
 function AlertDismissibleExample() {
     const [show, setShow] = useState(true);
 
@@ -27,7 +32,8 @@ export class Home extends React.Component {
         return (
 
             <div id="home-container">
-                <AlertDismissibleExample/>
+                {/* <AlertDismissibleExample/> */}
+                <CallToAction href='./logged-in-home'>Get Started</CallToAction>
                 <Button variant="outline-primary" size="lg" href="./logged-in-home" block>
                     Vajuta siia, et sisse logida
                 </Button>
