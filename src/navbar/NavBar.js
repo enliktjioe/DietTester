@@ -8,12 +8,13 @@ export class NavBar extends React.Component {
             <div>
                 <header>
                     <Navbar bg="dark" variant="dark" expand="lg">
-                        <Navbar.Brand href="#home">Diet Tester</Navbar.Brand>
+                        <Navbar.Brand href="/">Diet Tester</Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="mr-auto">
                                 <Nav.Link href="./home">Home</Nav.Link>
-                                <Nav.Link href="#link">Food Plans</Nav.Link>
+                                <Nav.Link href="/diet-plan">Food Plans</Nav.Link>
+                                <Nav.Link href="/daily-survey">Daily Survey</Nav.Link>
                             </Nav>
                             <Nav inline>
                                 <Nav.Link inline href="./logged-in-home">Log In</Nav.Link>

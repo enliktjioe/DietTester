@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import {BrowserRouter as Router, Redirect, Route, Switch} from "react-router-dom";
 import {Home} from "./home/Home";
-import {DietPlan} from "./diet/DietPlan";
+import {DietPlan} from "./dietplan/DietPlan";
 import LoggedInHome from "./loggedin/LoggedInHome";
 import {DailySurvey} from "./survey/DailySurvey";
 import NavBar from "./navbar/NavBar";
@@ -13,7 +13,10 @@ class App extends React.Component {
 
     render() {
         return (
+
             <Router>
+                <NavBar/>
+
                 <Switch>
                     <Route exact path="/" component={Home}>
                         <Redirect to="/home"/>
@@ -32,4 +35,5 @@ class App extends React.Component {
         );
     }
 }
+
 export default App;

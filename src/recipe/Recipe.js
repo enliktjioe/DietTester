@@ -2,6 +2,7 @@ import * as React from "react";
 import './Recipe.css'
 import {Alert} from "react-bootstrap";
 import Button from "react-bootstrap/Button";
+import NavBar from "../navbar/NavBar";
 
 export class Recipe extends React.Component {
 
