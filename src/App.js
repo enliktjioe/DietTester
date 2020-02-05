@@ -6,6 +6,7 @@ import {DietPlan} from "./diet/DietPlan";
 import LoggedInHome from "./loggedin/LoggedInHome";
 import NavBar from "./navbar/NavBar";
 import Menu from "./menu/Menu";
+import ShoppingList from "./shoppinglist/ShoppingList"
 
 class App extends React.Component {
 
@@ -21,6 +22,7 @@ class App extends React.Component {
                     <Route path="/navbar" exact component={NavBar}/>
                     <Route path="/diet-plan" exact component={DietPlan}/>
                     <Route path="/menu" exact component={Menu}/>
+                    <Route path="/shopping-list" exact component={ShoppingList}/>
                 </Switch>
 
             </Router>
