@@ -1,39 +1,26 @@
 import * as React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
-import ListGroup from "react-bootstrap/ListGroup";
-import ListGroupItem from "react-bootstrap/ListGroupItem";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Jumbotron from "react-bootstrap/esm/Jumbotron";
-
-
-
+import Button from "react-bootstrap/Button";
 
 export class Menu extends React.Component {
-
-
     render() {
         return (
             <div>
                 <header>
-                    <link
-                        rel="stylesheet"
-                        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-                        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-                        crossOrigin="anonymous"
-                    />
                     <Navbar bg="dark" variant="dark" expand="lg">
                         <Navbar.Brand href="#home">Diet Tester</Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="mr-auto">
                                 <Nav.Link href="./home">Home</Nav.Link>
-                                <Nav.Link href="#link">Food Plans</Nav.Link>
+                                <Nav.Link href="/diet-plan">Food Plans</Nav.Link>
                             </Nav>
                             <Nav inline>
                                 <Nav.Link inline href="./logged-in-home">Log In</Nav.Link>
@@ -41,10 +28,10 @@ export class Menu extends React.Component {
                         </Navbar.Collapse>
                     </Navbar>
                 </header>
-                <body style={{backgroundColor: 'black'}}>
+                <body style={{padding: '20px'}}>
                     <Carousel>
                         <Carousel.Item>
-                            <Jumbotron fluid>
+                            <Jumbotron style={{backgroundColor: 'black', width: '1300px'}}>
                                 <Container>
                                     <Row>
                                         <Col>
@@ -1311,6 +1298,7 @@ export class Menu extends React.Component {
                             </Jumbotron>
                         </Carousel.Item>
                     </Carousel>
+                    <Button style={{width: '400px'}} href="#ShoppingCart" variant="outline-info" size="lg" block>Confirm</Button>
                 </body>
             </div>
         );

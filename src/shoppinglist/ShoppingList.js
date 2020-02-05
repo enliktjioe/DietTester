@@ -29,7 +29,7 @@ export class ShoppingList extends React.Component {
                             <Card>
                                 <Card.Header>
                                     <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                        Eggs and chcken
+                                        Tomato
                                     </Accordion.Toggle>
                                 </Card.Header>
                                 <Accordion.Collapse eventKey="0">
