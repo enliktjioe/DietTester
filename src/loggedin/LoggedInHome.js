@@ -10,7 +10,7 @@ export class LoggedInHome extends React.Component {
 
                 <div id="diets">
                     <h1>
-                        Pick a new diet to try!
+                        Pick a new diet to try
                     </h1>
                     <div className="margin-6vh">
                         <Button href="./menu" variant="outline-info" size="lg" block>Vegan</Button>
