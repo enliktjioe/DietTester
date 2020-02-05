@@ -28,7 +28,7 @@ export class Menu extends React.Component {
                         </Navbar.Collapse>
                     </Navbar>
                 </header>
-                <body style={{padding: '20px'}}>
+                <body style={{padding: '20px', margin: 'auto'}}>
                     <Carousel>
                         <Carousel.Item>
                             <Jumbotron style={{backgroundColor: 'black', width: '1300px'}}>
