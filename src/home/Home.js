@@ -31,26 +31,20 @@ export class Home extends React.Component {
         return (
             
             <div id="home-container">
-                <header className="header" style={{position:"relative"}}>
-                    <div 
-                    style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center"
-                        }}>
-                            <h3>Diet Tester</h3>
-                    </div>
-                </header>
-
+                <Heading textAlign="center">Build a healthy life
+                    <h5 textAlign="center">7-Day Diet Menu</h5>
+                </Heading>
+                
                 <div 
-                    style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center"
-                        }}
-                >
-                    <iframe  src="//www.youtube.com/embed/wRKoRvFwNfY" width="630" height="354"></iframe>
-                </div>
+                            style={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center"
+                                }}
+                        >
+                            <iframe  src="//www.youtube.com/embed/wRKoRvFwNfY" width="630" height="354"></iframe>
+                        </div>
+
 
                 <div 
                     style={{
