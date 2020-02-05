@@ -1,9 +1,8 @@
 import * as React from "react";
-import { Provider, Heading, Subhead, Flex, NavLink, } from 'rebass'
+import { Heading, Subhead, Flex } from 'rebass'
 import {
-  CallToAction, Section, Checklist, Testimony, Contributor
+  CallToAction, Section, Checklist, Testimony
 } from 'react-landing-page'
-import NavBar from 'react-responsive-menubar/lib/NavBar';
 
 const featherCheckmark = <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -33,23 +32,14 @@ export class Home extends React.Component {
             
             <div id="home-container">
                 <header className="header" style={{position:"relative"}}>
-                    <NavBar 
-                    handleSideNavToggle={this.handleSideNavToggle} 
-                    logo={'https://cdn1.iconfinder.com/data/icons/app-7/48/295-512.png'} 
-                    showSideNav={this.state.showSideNav} 
-                    logoStyles={{height:"85px", width:"85px", alignItems: "left"}} 
-                    navBarStyles={{boxShadow:"none"}} 
-                    linkStyles={{color:"green", fontWeight:"bold"}}>
-            
-                        <a href="./logged-in-home">Login</a>
-                        <a href="./dietchosen">Food Plan</a>
-                    </NavBar>
                     <div 
                     style={{
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center"
-                        }}><h3>Diet Tester</h3></div>
+                        }}>
+                            <h3>Diet Tester</h3>
+                    </div>
                 </header>
 
                 <div 
