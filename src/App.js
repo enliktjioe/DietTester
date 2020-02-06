@@ -7,11 +7,10 @@ import LoggedInHome from "./loggedin/LoggedInHome";
 import {DailySurvey} from "./survey/DailySurvey";
 import Menu from "./menu/Menu";
 import ShoppingList from "./shoppinglist/ShoppingList"
-import {Recipe} from "./recipe/Recipe";
+import {Recipe1} from "./recipe/Recipe1";
 import ChosenDiet from "./chosendiet/ChosenDiet";
 
 class App extends React.Component {
-
     render() {
         return (
             <Router>
@@ -26,9 +25,8 @@ class App extends React.Component {
                     <Route path="/my-diet" exact component={ChosenDiet}/>
                     <Route path="/menu" exact component={Menu}/>
                     <Route path="/shopping-list" exact component={ShoppingList}/>
-                    <Route path="/recipe" excact component={Recipe}/>
+                    <Route path="/recipe1" excact component={Recipe1}/>
                 </Switch>
-
             </Router>
         );
     }

@@ -6,8 +6,9 @@ import NavBarLoggedIn from "../navbarloggedin/NavBarLoggedIn";
 import Strog from "../resources/lentil-stroganoff.jpg"
 import {Col, Container, Image} from "react-bootstrap";
 import Row from "react-bootstrap/Row";
+import Badge from "react-bootstrap/Badge";
 
-export class Recipe extends React.Component {
+export class Recipe1 extends React.Component {
 
     renderListElements(elements) {
         const listElements = elements.map((el) => <li>{el}</li>);
@@ -26,7 +27,9 @@ export class Recipe extends React.Component {
                 <div id="recipe">
                     <h1 className="recipe-title">
                         Lentil stroganoff (Oil-free, GF)
+                        <h5><Badge variant="info">41 minutes</Badge>{' '}</h5>
                     </h1>
+
                     <Container>
                         <Row>
                             <Col>
@@ -70,4 +73,4 @@ export class Recipe extends React.Component {
     }
 }
 
-export default Recipe;
+export default Recipe1;
