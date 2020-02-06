@@ -21,93 +21,96 @@ export class ShoppingList extends React.Component {
                 </Media>
 
                 <Container>
-                    <Row>
-                        <Col sm>
-                        <Accordion>
-                            <Card>
+                    <Row style={{paddingTop: '20px'}}>
+                        <Col sm >
+                            <Accordion>
+                                <Card>
                                     <Accordion.Toggle as={Card.Header} variant="link" eventKey="0">
                                         Vegetables
                                     </Accordion.Toggle>
-                                <Accordion.Collapse eventKey="0">
-                                    <Card.Body>
-                                        <InputGroup className="mb-3">
-                                            <InputGroup.Prepend>
-                                                <InputGroup.Checkbox aria-label="Tomatoes" />
-                                            </InputGroup.Prepend>
-                                            <InputGroup.Text id="inputGroup-sizing-sm">Tomatoes</InputGroup.Text>                                </InputGroup>
-                                    </Card.Body>
-                                </Accordion.Collapse>
-                                <Accordion.Collapse eventKey="0">
-                                    <Card.Body>
-                                        <InputGroup className="mb-3">
-                                            <InputGroup.Prepend>
-                                                <InputGroup.Checkbox aria-label="Onions" />
-                                            </InputGroup.Prepend>
-                                            <InputGroup.Text id="inputGroup-sizing-sm">Onioons?</InputGroup.Text>                                </InputGroup>
-                                    </Card.Body>
-                                </Accordion.Collapse>
-                            </Card>
-                        </Accordion>
+                                    <Accordion.Collapse eventKey="0">
+                                        <Card.Body>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Tomatoes" />
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Tomatoes</InputGroup.Text>
+                                            </InputGroup>
+                                        </Card.Body>
+                                    </Accordion.Collapse>
+                                    <Accordion.Collapse eventKey="0">
+                                        <Card.Body>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Onions" />
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Onioons?</InputGroup.Text>
+                                            </InputGroup>
+                                        </Card.Body>
+                                    </Accordion.Collapse>
+                                </Card>
+                            </Accordion>
                         </Col>
                         <Col sm={2}></Col>
                         <Col sm>
-                        <Accordion>
-                            <Card>
+                            <Accordion>
+                                <Card>
                                     <Accordion.Toggle as={Card.Header} variant="link" eventKey="1">
                                         Fruits
                                     </Accordion.Toggle>
-                                <Accordion.Collapse eventKey="1">
-                                    <Card.Body>
-                                        <InputGroup className="mb-3">
-                                            <InputGroup.Prepend>
-                                                <InputGroup.Checkbox aria-label="Apples" />
-                                            </InputGroup.Prepend>
-                                            <InputGroup.Text id="inputGroup-sizing-sm">Apples</InputGroup.Text>                                </InputGroup>
-                                    </Card.Body>
-                                </Accordion.Collapse>
-                                <Accordion.Collapse eventKey="1">
-                                    <Card.Body>
-                                        <InputGroup className="mb-3">
-                                            <InputGroup.Prepend>
-                                                <InputGroup.Checkbox aria-label="Pears" />
-                                            </InputGroup.Prepend>
-                                            <InputGroup.Text id="inputGroup-sizing-sm">Pears</InputGroup.Text>                                </InputGroup>
-                                    </Card.Body>
-                                </Accordion.Collapse>
-                            </Card>
-                </Accordion>
+                                    <Accordion.Collapse eventKey="1">
+                                        <Card.Body>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Apples" />
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Apples</InputGroup.Text>
+                                            </InputGroup>
+                                        </Card.Body>
+                                    </Accordion.Collapse>
+                                    <Accordion.Collapse eventKey="1">
+                                        <Card.Body>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Pears" />
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Pears</InputGroup.Text>
+                                            </InputGroup>
+                                        </Card.Body>
+                                    </Accordion.Collapse>
+                                </Card>
+                            </Accordion>
                         </Col>
                     </Row>
-                    <Row>
+                    <Row style={{paddingTop: '20px'}}>
                         <Col sm>
-                        <Accordion>
-                            <Card>
+                            <Accordion>
+                                <Card>
                                     <Accordion.Toggle as={Card.Header} variant="link" eventKey="0">
                                         Cereals
                                     </Accordion.Toggle>
-                                <Accordion.Collapse eventKey="0">
-                                    <Card.Body>
-                                        <InputGroup className="mb-3">
-                                            <InputGroup.Prepend>
-                                                <InputGroup.Checkbox aria-label="Rice" />
-                                            </InputGroup.Prepend>
-                                            <InputGroup.Text id="inputGroup-sizing-sm">Rice</InputGroup.Text>                                </InputGroup>
-                                    </Card.Body>
-                                </Accordion.Collapse>
-                                <Accordion.Collapse eventKey="0">
-                                    <Card.Body>
-                                        <InputGroup className="mb-3">
-                                            <InputGroup.Prepend>
-                                                <InputGroup.Checkbox aria-label="Coconut Oil" />
-                                            </InputGroup.Prepend>
-                                            <InputGroup.Text id="inputGroup-sizing-sm">Oat</InputGroup.Text>                                </InputGroup>
-                                    </Card.Body>
-                                </Accordion.Collapse>
-                            </Card>
-                        </Accordion>
-                    </Col>
+                                    <Accordion.Collapse eventKey="0">
+                                        <Card.Body>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Rice" />
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Rice</InputGroup.Text>                                </InputGroup>
+                                        </Card.Body>
+                                    </Accordion.Collapse>
+                                    <Accordion.Collapse eventKey="0">
+                                        <Card.Body>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Coconut Oil" />
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Oat</InputGroup.Text>                                </InputGroup>
+                                        </Card.Body>
+                                    </Accordion.Collapse>
+                                </Card>
+                            </Accordion>
+                        </Col>
                         <Col sm={2}></Col>
-
                         <Col sm>
                             <Accordion>
                                 <Card>
@@ -137,9 +140,9 @@ export class ShoppingList extends React.Component {
                             </Accordion>
                         </Col>
                     </Row>
-                    <Row>
-                        <Col md={{ span: 6, offset: 8 }}>
-                            <Button style={{width: '350px'}} href="./menu" variant="outline-info" size="lg" block>DONE</Button>
+                    <Row style={{paddingTop: '20px'}}>
+                        <Col>
+                            <Button style={{width: '400px', maxWidth: '400px', margin: 'auto'}} href="./my-diet" variant="outline-info" size="lg" block>Finish</Button>
                         </Col>
                     </Row>
                 </Container>

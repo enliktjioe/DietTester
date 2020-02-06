@@ -5,13 +5,13 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+import NavBarLoggedIn from "../navbarloggedin/NavBarLoggedIn";
 
 export class ChosenDiet extends React.Component {
     render() {
         return (
             <div>
+                <NavBarLoggedIn/>
                 <h1>7-Day menu</h1>
                 <Carousel style={{padding: '20px', width: '1400px', maxWidth: '1400px', margin: 'auto'}}>
                     <Carousel.Item>
