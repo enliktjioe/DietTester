@@ -4,18 +4,19 @@ import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Jumbotron from "react-bootstrap/esm/Jumbotron";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import NavBarLoggedIn from "../navbarloggedin/NavBarLoggedIn";
+import Breakfast1 from "../resources/breakfast1.png"
+import Image from "react-bootstrap/Image";
 
 export class Menu extends React.Component {
     render() {
         return (
             <div>
                 <NavBarLoggedIn/>
-                <h1>7-Day menu</h1>
-                <Card border="info" style={{ width: '1078px', maxWidth: '1078px', margin: 'auto'}}>
+                <h1>7-Day meal plan</h1>
+                <Card border="info" style={{ width: '1200px', maxWidth: '1200px', margin: 'auto'}}>
                     <Card.Body>
                         <Card.Title>Fact about being a vegan</Card.Title>
                         <Card.Text>
@@ -23,180 +24,87 @@ export class Menu extends React.Component {
                         </Card.Text>
                     </Card.Body>
                 </Card>
-                <Carousel style={{padding: '20px', width: '1400px', maxWidth: '1400px', margin: 'auto'}}>
+                <Carousel style={{padding: '25px', width: '1500px', maxWidth: '1500px', margin: 'auto'}}>
                     <Carousel.Item>
-                        <Jumbotron
-                            style={{backgroundColor: 'black', width: '1300px', maxWidth: '1300px', margin: 'auto'}}>
-                            <Container>
+                            <Container style={{width: '1200px', maxWidth: '1200px', margin: 'auto'}}>
                                 <Row>
                                     <Col>
-                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
+                                        <Card border="info">
                                             <Card.Body>
-                                                <Card.Title>07.02.2020</Card.Title>
+                                                <Card.Title style={{textAlign: 'center'}}>07.02.2020</Card.Title>
                                                 <Card.Text>
-                                                    <h4>Breakfast</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Lunch</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Afternoon</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Snack</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
+                                                    <Card border="info">
+                                                        <Card.Body>
+                                                            <Container>
+                                                                <Row>
+                                                                    <Col style={{ width: '9rem' }}>
+                                                                        <Card.Title>Chive waffles with maple & soy mushrooms</Card.Title>
+                                                                    </Col>
+                                                                    <Col style={{ width: '8rem' }}>
+                                                                        <Image style={{width: '110px', height: '110px'}} src={Breakfast1} roundedCircle />
+                                                                    </Col>
+                                                                </Row>
+                                                                <Row>
+                                                                    <Col style={{ width: '9rem' }}>
+                                                                        <Card.Text>
+                                                                            Time to make: 45 min
+                                                                        </Card.Text>
+                                                                    </Col>
+                                                                </Row>
+                                                            </Container>
+                                                        </Card.Body>
+                                                    </Card>
+                                                    <Card border="info" style={{marginTop: '15px'}}>
+                                                        <Card.Body>
+                                                            <Container>
+                                                                <Row>
+                                                                    <Col style={{ width: '9rem' }}>
+                                                                        <Card.Title>Chive waffles with maple & soy mushrooms</Card.Title>
+                                                                        <Card.Text>
+                                                                            Time to make: 45 min
+                                                                        </Card.Text>
+                                                                    </Col>
+                                                                    <Col style={{ width: '8rem' }}>
+                                                                        <Image style={{width: '90px', height: '90px'}} src={Breakfast1} roundedCircle />
+                                                                    </Col>
+                                                                </Row>
+                                                            </Container>
+                                                        </Card.Body>
+                                                    </Card>
+                                                    <Card border="info" style={{marginTop: '15px'}}>
+                                                        <Card.Body>
+                                                            <Container>
+                                                                <Row>
+                                                                    <Col style={{ width: '9rem' }}>
+                                                                        <Card.Title>Chive waffles with maple & soy mushrooms</Card.Title>
+                                                                        <Card.Text>
+                                                                            Time to make: 45 min
+                                                                        </Card.Text>
+                                                                    </Col>
+                                                                    <Col style={{ width: '8rem' }}>
+                                                                        <Image style={{width: '90px', height: '90px'}} src={Breakfast1} roundedCircle />
+                                                                    </Col>
+                                                                </Row>
+                                                            </Container>
+                                                        </Card.Body>
+                                                    </Card>
                                                 </Card.Text>
                                             </Card.Body>
                                         </Card>
                                     </Col>
                                     <Col>
-                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
+                                        <Card border="info">
                                             <Card.Body>
                                                 <Card.Title>08.02.2020</Card.Title>
-                                                <Card.Text>
-                                                    <h4>Breakfast</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Lunch</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Afternoon</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Snack</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                </Card.Text>
+
                                             </Card.Body>
                                         </Card>
                                     </Col>
                                     <Col>
-                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
+                                        <Card border="info" >
                                             <Card.Body>
                                                 <Card.Title>09.02.2020</Card.Title>
-                                                <Card.Text>
-                                                    <h4>Breakfast</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Lunch</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Afternoon</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Snack</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                </Card.Text>
+
                                             </Card.Body>
                                         </Card>
                                     </Col>
@@ -204,1099 +112,24 @@ export class Menu extends React.Component {
                             </Container>
                             <Carousel.Caption>
                             </Carousel.Caption>
-                        </Jumbotron>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <Jumbotron
-                            style={{backgroundColor: 'black', width: '1300px', maxWidth: '1300px', margin: 'auto'}}>
-                            <Container>
-                                <Row>
-                                    <Col>
-                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
-                                            <Card.Body>
-                                                <Card.Title>08.02.2020</Card.Title>
-                                                <Card.Text>
-                                                    <h4>Breakfast</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Lunch</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Afternoon</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Snack</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                </Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col>
-                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
-                                            <Card.Body>
-                                                <Card.Title>09.02.2020</Card.Title>
-                                                <Card.Text>
-                                                    <h4>Breakfast</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Lunch</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Afternoon</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Snack</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                </Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col>
-                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
-                                            <Card.Body>
-                                                <Card.Title>10.02.2020</Card.Title>
-                                                <Card.Text>
-                                                    <h4>Breakfast</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Lunch</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Afternoon</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Snack</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                </Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                </Row>
-                            </Container>
-                            <Carousel.Caption>
-                            </Carousel.Caption>
-                        </Jumbotron>
+
                     </Carousel.Item>
                     <Carousel.Item>
-                        <Jumbotron
-                            style={{backgroundColor: 'black', width: '1300px', maxWidth: '1300px', margin: 'auto'}}>
-                            <Container>
-                                <Row>
-                                    <Col>
-                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
-                                            <Card.Body>
-                                                <Card.Title>09.02.2020</Card.Title>
-                                                <Card.Text>
-                                                    <h4>Breakfast</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Lunch</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Afternoon</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Snack</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                </Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col>
-                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
-                                            <Card.Body>
-                                                <Card.Title>10.02.2020</Card.Title>
-                                                <Card.Text>
-                                                    <h4>Breakfast</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Lunch</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Afternoon</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Snack</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                </Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col>
-                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
-                                            <Card.Body>
-                                                <Card.Title>11.02.2020</Card.Title>
-                                                <Card.Text>
-                                                    <h4>Breakfast</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Lunch</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Afternoon</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Snack</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                </Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                </Row>
-                            </Container>
-                            <Carousel.Caption>
-                            </Carousel.Caption>
-                        </Jumbotron>
+
                     </Carousel.Item>
                     <Carousel.Item>
-                        <Jumbotron
-                            style={{backgroundColor: 'black', width: '1300px', maxWidth: '1300px', margin: 'auto'}}>
-                            <Container>
-                                <Row>
-                                    <Col>
-                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
-                                            <Card.Body>
-                                                <Card.Title>10.02.2020</Card.Title>
-                                                <Card.Text>
-                                                    <h4>Breakfast</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Lunch</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Afternoon</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Snack</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                </Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col>
-                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
-                                            <Card.Body>
-                                                <Card.Title>11.02.2020</Card.Title>
-                                                <Card.Text>
-                                                    <h4>Breakfast</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Lunch</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Afternoon</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Snack</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                </Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col>
-                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
-                                            <Card.Body>
-                                                <Card.Title>12.02.2020</Card.Title>
-                                                <Card.Text>
-                                                    <h4>Breakfast</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Lunch</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Afternoon</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Snack</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                </Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                </Row>
-                            </Container>
-                            <Carousel.Caption>
-                            </Carousel.Caption>
-                        </Jumbotron>
+
                     </Carousel.Item>
                     <Carousel.Item>
-                        <Jumbotron
-                            style={{backgroundColor: 'black', width: '1300px', maxWidth: '1300px', margin: 'auto'}}>
-                            <Container>
-                                <Row>
-                                    <Col>
-                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
-                                            <Card.Body>
-                                                <Card.Title>11.02.2020</Card.Title>
-                                                <Card.Text>
-                                                    <h4>Breakfast</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Lunch</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Afternoon</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Snack</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                </Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col>
-                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
-                                            <Card.Body>
-                                                <Card.Title>12.02.2020</Card.Title>
-                                                <Card.Text>
-                                                    <h4>Breakfast</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Lunch</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Afternoon</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Snack</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                </Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col>
-                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
-                                            <Card.Body>
-                                                <Card.Title>13.02.2020</Card.Title>
-                                                <Card.Text>
-                                                    <h4>Breakfast</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Lunch</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Afternoon</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Snack</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                </Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                </Row>
-                            </Container>
-                            <Carousel.Caption>
-                            </Carousel.Caption>
-                        </Jumbotron>
+
                     </Carousel.Item>
                     <Carousel.Item>
-                        <Jumbotron
-                            style={{backgroundColor: 'black', width: '1300px', maxWidth: '1300px', margin: 'auto'}}>
-                            <Container>
-                                <Row>
-                                    <Col>
-                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
-                                            <Card.Body>
-                                                <Card.Title>12.02.2020</Card.Title>
-                                                <Card.Text>
-                                                    <h4>Breakfast</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Lunch</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Afternoon</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Snack</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                </Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col>
-                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
-                                            <Card.Body>
-                                                <Card.Title>13.02.2020</Card.Title>
-                                                <Card.Text>
-                                                    <h4>Breakfast</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Lunch</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Afternoon</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Snack</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                </Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col>
-                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
-                                            <Card.Body>
-                                                <Card.Title>14.02.2020</Card.Title>
-                                                <Card.Text>
-                                                    <h4>Breakfast</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Lunch</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Afternoon</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Snack</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                </Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                </Row>
-                            </Container>
-                            <Carousel.Caption>
-                            </Carousel.Caption>
-                        </Jumbotron>
+
                     </Carousel.Item>
                     <Carousel.Item>
-                        <Jumbotron
-                            style={{backgroundColor: 'black', width: '1300px', maxWidth: '1300px', margin: 'auto'}}>
-                            <Container>
-                                <Row>
-                                    <Col>
-                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
-                                            <Card.Body>
-                                                <Card.Title>13.02.2020</Card.Title>
-                                                <Card.Text>
-                                                    <h4>Breakfast</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Lunch</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Afternoon</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Snack</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                </Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col>
-                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
-                                            <Card.Body>
-                                                <Card.Title>14.02.2020</Card.Title>
-                                                <Card.Text>
-                                                    <h4>Breakfast</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Lunch</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Afternoon</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Snack</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                </Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                    <Col>
-                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
-                                            <Card.Body>
-                                                <Card.Title>15.02.2020</Card.Title>
-                                                <Card.Text>
-                                                    <h4>Breakfast</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Lunch</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Afternoon</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                    <h4>Snack</h4>
-                                                    <p>
-                                                        <div>
-                                                            <b>Name</b>
-                                                        </div>
-                                                        <div>
-                                                            Ingredients
-                                                        </div>
-                                                        <div>
-                                                            How to do it?
-                                                        </div>
-                                                    </p>
-                                                </Card.Text>
-                                            </Card.Body>
-                                        </Card>
-                                    </Col>
-                                </Row>
-                            </Container>
-                            <Carousel.Caption>
-                            </Carousel.Caption>
-                        </Jumbotron>
+
                     </Carousel.Item>
                 </Carousel>
                 <p>
@@ -1309,7 +142,7 @@ export class Menu extends React.Component {
                     </Container>
                 </p>
                 <p>
-                    <Button style={{width: '400px', maxWidth: '400px', margin: 'auto'}} href="./shopping-list" variant="outline-info" size="lg" block>Confirm</Button>
+                    <Button style={{width: '400px', maxWidth: '400px', margin: 'auto'}} href="./shopping-list" variant="outline-info" size="lg" block>Get my shopping list</Button>
                 </p>
                 <p>
                     <Button style={{width: '400px', maxWidth: '400px', margin: 'auto'}} href="./logged-in-home" variant="outline-danger" size="lg" block>Cancel</Button>
