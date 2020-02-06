@@ -27,8 +27,9 @@ export class Recipe1 extends React.Component {
                 <div id="recipe">
                     <h1 className="recipe-title">
                         Lentil stroganoff (Oil-free, GF)
-                        <Badge variant="secondary">41 minutes</Badge>
+                        <h5><Badge variant="info">41 minutes</Badge>{' '}</h5>
                     </h1>
+
                     <Container>
                         <Row>
                             <Col>
