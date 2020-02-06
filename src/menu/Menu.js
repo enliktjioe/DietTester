@@ -16,7 +16,7 @@ export class Menu extends React.Component {
             <div>
                 <NavBarLoggedIn/>
                 <h1>7-Day meal plan</h1>
-                <Card border="info" style={{ width: '1200px', maxWidth: '1200px', margin: 'auto'}}>
+                <Card border="success" style={{ width: '1200px', maxWidth: '1200px', margin: 'auto'}}>
                     <Card.Body>
                         <Card.Title>Fact about being a vegan</Card.Title>
                         <Card.Text>
@@ -29,11 +29,11 @@ export class Menu extends React.Component {
                             <Container style={{width: '1200px', maxWidth: '1200px', margin: 'auto'}}>
                                 <Row>
                                     <Col>
-                                        <Card border="info">
+                                        <Card border="success">
                                             <Card.Body>
                                                 <Card.Title style={{textAlign: 'center'}}>07.02.2020</Card.Title>
                                                 <Card.Text>
-                                                    <Card border="info">
+                                                    <Card border="success">
                                                         <Card.Body>
                                                             <Container>
                                                                 <Row>
@@ -54,7 +54,7 @@ export class Menu extends React.Component {
                                                             </Container>
                                                         </Card.Body>
                                                     </Card>
-                                                    <Card border="info" style={{marginTop: '15px'}}>
+                                                    <Card border="success" style={{marginTop: '15px'}}>
                                                         <Card.Body>
                                                             <Container>
                                                                 <Row>
@@ -71,7 +71,7 @@ export class Menu extends React.Component {
                                                             </Container>
                                                         </Card.Body>
                                                     </Card>
-                                                    <Card border="info" style={{marginTop: '15px'}}>
+                                                    <Card border="success" style={{marginTop: '15px'}}>
                                                         <Card.Body>
                                                             <Container>
                                                                 <Row>
@@ -93,7 +93,7 @@ export class Menu extends React.Component {
                                         </Card>
                                     </Col>
                                     <Col>
-                                        <Card border="info">
+                                        <Card border="success">
                                             <Card.Body>
                                                 <Card.Title>08.02.2020</Card.Title>
 
@@ -101,7 +101,7 @@ export class Menu extends React.Component {
                                         </Card>
                                     </Col>
                                     <Col>
-                                        <Card border="info" >
+                                        <Card border="success" >
                                             <Card.Body>
                                                 <Card.Title>09.02.2020</Card.Title>
 
@@ -142,7 +142,7 @@ export class Menu extends React.Component {
                     </Container>
                 </p>
                 <p>
-                    <Button style={{width: '400px', maxWidth: '400px', margin: 'auto'}} href="./shopping-list" variant="outline-info" size="lg" block>Get my shopping list</Button>
+                    <Button style={{width: '400px', maxWidth: '400px', margin: 'auto'}} href="./shopping-list" variant="outline-success" size="lg" block>Get my shopping list</Button>
                 </p>
                 <p>
                     <Button style={{width: '400px', maxWidth: '400px', margin: 'auto'}} href="./logged-in-home" variant="outline-danger" size="lg" block>Cancel</Button>
