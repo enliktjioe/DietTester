@@ -1,7 +1,7 @@
 import * as React from "react";
 import './LoggedInHome.css'
 import Button from "react-bootstrap/Button";
-import NavBar from "../navbar/NavBar";
+import NavBarLoggedIn from "../navbarloggedin/NavBarLoggedIn";
 
 export class LoggedInHome extends React.Component {
 
@@ -9,6 +9,7 @@ export class LoggedInHome extends React.Component {
         return (
             <>
                 <div id="logged-in-home-container">
+                    <NavBarLoggedIn/>
                     <div id="diets">
                         <h1>
                             Pick a new diet to try
@@ -26,7 +27,8 @@ export class LoggedInHome extends React.Component {
                         </div>
                     </div>
                 </div>
-            </>)
+            </>
+        )
     }
 }
 

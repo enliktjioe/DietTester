@@ -5,7 +5,6 @@ import {Home} from "./home/Home";
 import {DietPlan} from "./dietplan/DietPlan";
 import LoggedInHome from "./loggedin/LoggedInHome";
 import {DailySurvey} from "./survey/DailySurvey";
-import NavBar from "./navbar/NavBar";
 import Menu from "./menu/Menu";
 import ShoppingList from "./shoppinglist/ShoppingList"
 
@@ -14,8 +13,6 @@ class App extends React.Component {
     render() {
         return (
             <Router>
-                <NavBar/>
-
                 <Switch>
                     <Route exact path="/" component={Home}>
                         <Redirect to="/home"/>

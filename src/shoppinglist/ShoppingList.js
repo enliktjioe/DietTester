@@ -6,14 +6,14 @@ import InputGroup from "react-bootstrap/InputGroup";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import NavBarLoggedIn from "../navbarloggedin/NavBarLoggedIn";
 import Button from "react-bootstrap/Button";
 
 export class ShoppingList extends React.Component {
     render() {
         return (
             <div>
-                <header></header>
-                <body>
+                <NavBarLoggedIn/>
                 <Media>
                     <Media.Body>
                         <h2 style={{textAlign: "center"}}>Shopping list</h2>
@@ -107,6 +107,7 @@ export class ShoppingList extends React.Component {
                         </Accordion>
                     </Col>
                         <Col sm={2}></Col>
+
                         <Col sm>
                             <Accordion>
                                 <Card>
@@ -122,13 +123,14 @@ export class ShoppingList extends React.Component {
                                                 <InputGroup.Text id="inputGroup-sizing-sm">Red Beans</InputGroup.Text>                                </InputGroup>
                                         </Card.Body>
                                     </Accordion.Collapse>
-                                    <Accordion.Collapse eventKey="1">
+                                    <Accordion.Collapse eventKey="0">
                                         <Card.Body>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
                                                     <InputGroup.Checkbox aria-label="Pistachios" />
                                                 </InputGroup.Prepend>
                                                 <InputGroup.Text id="inputGroup-sizing-sm">Pistachios</InputGroup.Text>                                </InputGroup>
+
                                         </Card.Body>
                                     </Accordion.Collapse>
                                 </Card>
@@ -141,8 +143,6 @@ export class ShoppingList extends React.Component {
                         </Col>
                     </Row>
                 </Container>
-                </body>
-
             </div>
 
         );
