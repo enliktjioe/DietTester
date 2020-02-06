@@ -8,22 +8,24 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import NavBarLoggedIn from "../navbarloggedin/NavBarLoggedIn";
 import Button from "react-bootstrap/Button";
-//import './ShoppingList.css';
+
 export class ShoppingList extends React.Component {
     render() {
         return (
             <div>
                 <NavBarLoggedIn/>
+                <br/>
                 <Media>
                     <Media.Body>
-                        <p> </p>
                         <h2 style={{textAlign: "center"}}>Shopping list</h2>
-                        <p> </p>
                     </Media.Body>
                 </Media>
+                <br/>
+
                 <Container>
-                    <Row style={{paddingTop: '20px'}}>
-                        <Col sm >
+                    <hr/>
+                    <Row>
+                        <Col sm>
                             <Accordion>
                                 <Card>
                                     <Accordion.Toggle as={Card.Header} variant="link" eventKey="0">
@@ -33,7 +35,7 @@ export class ShoppingList extends React.Component {
                                         <Card.Body>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
-                                                    <InputGroup.Checkbox aria-label="Tomatoes" />
+                                                    <InputGroup.Checkbox aria-label="Tomatoes"/>
                                                 </InputGroup.Prepend>
                                                 <InputGroup.Text id="inputGroup-sizing-sm">Tomatoes</InputGroup.Text>
                                             </InputGroup>
@@ -43,7 +45,7 @@ export class ShoppingList extends React.Component {
                                         <Card.Body>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
-                                                    <InputGroup.Checkbox aria-label="Onions" />
+                                                    <InputGroup.Checkbox aria-label="Onions"/>
                                                 </InputGroup.Prepend>
                                                 <InputGroup.Text id="inputGroup-sizing-sm">Onioons?</InputGroup.Text>
                                             </InputGroup>
@@ -63,7 +65,7 @@ export class ShoppingList extends React.Component {
                                         <Card.Body>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
-                                                    <InputGroup.Checkbox aria-label="Apples" />
+                                                    <InputGroup.Checkbox aria-label="Apples"/>
                                                 </InputGroup.Prepend>
                                                 <InputGroup.Text id="inputGroup-sizing-sm">Apples</InputGroup.Text>
                                             </InputGroup>
@@ -73,7 +75,7 @@ export class ShoppingList extends React.Component {
                                         <Card.Body>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
-                                                    <InputGroup.Checkbox aria-label="Pears" />
+                                                    <InputGroup.Checkbox aria-label="Pears"/>
                                                 </InputGroup.Prepend>
                                                 <InputGroup.Text id="inputGroup-sizing-sm">Pears</InputGroup.Text>
                                             </InputGroup>
@@ -83,7 +85,8 @@ export class ShoppingList extends React.Component {
                             </Accordion>
                         </Col>
                     </Row>
-                    <Row style={{paddingTop: '20px'}}>
+                    <hr/>
+                    <Row>
                         <Col sm>
                             <Accordion>
                                 <Card>
@@ -94,24 +97,27 @@ export class ShoppingList extends React.Component {
                                         <Card.Body>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
-                                                    <InputGroup.Checkbox aria-label="Rice" />
+                                                    <InputGroup.Checkbox aria-label="Rice"/>
                                                 </InputGroup.Prepend>
-                                                <InputGroup.Text id="inputGroup-sizing-sm">Rice</InputGroup.Text>                                </InputGroup>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Rice</InputGroup.Text>
+                                            </InputGroup>
                                         </Card.Body>
                                     </Accordion.Collapse>
                                     <Accordion.Collapse eventKey="0">
                                         <Card.Body>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
-                                                    <InputGroup.Checkbox aria-label="Coconut Oil" />
+                                                    <InputGroup.Checkbox aria-label="Coconut Oil"/>
                                                 </InputGroup.Prepend>
-                                                <InputGroup.Text id="inputGroup-sizing-sm">Oat</InputGroup.Text>                                </InputGroup>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Oat</InputGroup.Text>
+                                            </InputGroup>
                                         </Card.Body>
                                     </Accordion.Collapse>
                                 </Card>
                             </Accordion>
                         </Col>
                         <Col sm={2}></Col>
+
                         <Col sm>
                             <Accordion>
                                 <Card>
@@ -122,18 +128,20 @@ export class ShoppingList extends React.Component {
                                         <Card.Body>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
-                                                    <InputGroup.Checkbox aria-label="Red Beans" />
+                                                    <InputGroup.Checkbox aria-label="Red Beans"/>
                                                 </InputGroup.Prepend>
-                                                <InputGroup.Text id="inputGroup-sizing-sm">Red Beans</InputGroup.Text>                                </InputGroup>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Red Beans</InputGroup.Text>
+                                            </InputGroup>
                                         </Card.Body>
                                     </Accordion.Collapse>
                                     <Accordion.Collapse eventKey="0">
                                         <Card.Body>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
-                                                    <InputGroup.Checkbox aria-label="Pistachios" />
+                                                    <InputGroup.Checkbox aria-label="Pistachios"/>
                                                 </InputGroup.Prepend>
-                                                <InputGroup.Text id="inputGroup-sizing-sm">Pistachios</InputGroup.Text>                                </InputGroup>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Pistachios</InputGroup.Text>
+                                            </InputGroup>
 
                                         </Card.Body>
                                     </Accordion.Collapse>
@@ -141,9 +149,12 @@ export class ShoppingList extends React.Component {
                             </Accordion>
                         </Col>
                     </Row>
-                    <Row style={{paddingTop: '20px'}}>
-                        <Col>
-                            <Button style={{width: '400px', maxWidth: '400px', margin: 'auto'}} href="./my-diet" variant="outline-info" size="lg" block>Finish</Button>
+                    <hr/>
+                    <br/>
+                    <Row>
+                        <Col md={{span: 6, offset: 8}}>
+                            <Button style={{width: '50vh'}} href="./menu" variant="outline-info" size="lg"
+                                    block>DONE</Button>
                         </Col>
                     </Row>
                 </Container>
