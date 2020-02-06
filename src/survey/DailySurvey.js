@@ -74,7 +74,7 @@ export class DailySurvey extends React.Component {
                                 <Form.Control size="lg" type="text" placeholder="Large text"/>
                             </Form.Row>
                         </Form>
-                        <Button href="/menu" variant="outline-info" size="lg" className="margin-top-5vh"
+                        <Button href="/my-diet" variant="outline-info" size="lg" className="margin-top-5vh"
                                 block>Submit
                             answers</Button>
                     </div>
