@@ -54,7 +54,7 @@ export class ShoppingList extends React.Component {
                                 </Card>
                             </Accordion>
                         </Col>
-                        <Col sm={2}></Col>
+                        <Col sm={2}/>
                         <Col sm>
                             <Accordion>
                                 <Card>
