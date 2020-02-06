@@ -1,0 +1,15 @@
+.recipe-title {
+    margin-bottom: 2vh;
+}
+
+#recipe {
+    margin: 4vh 6vh 8vh;
+}
+
+#right {
+    float: right;
+    margin-right: 10vh;
+    height: 45vh;
+    width: 45vh;
+    object-fit: contain;
+}
