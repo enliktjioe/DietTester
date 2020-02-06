@@ -8,7 +8,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import NavBarLoggedIn from "../navbarloggedin/NavBarLoggedIn";
 import Button from "react-bootstrap/Button";
-
+//import './ShoppingList.css';
 export class ShoppingList extends React.Component {
     render() {
         return (
@@ -16,10 +16,11 @@ export class ShoppingList extends React.Component {
                 <NavBarLoggedIn/>
                 <Media>
                     <Media.Body>
+                        <p> </p>
                         <h2 style={{textAlign: "center"}}>Shopping list</h2>
+                        <p> </p>
                     </Media.Body>
                 </Media>
-
                 <Container>
                     <Row>
                         <Col sm>
