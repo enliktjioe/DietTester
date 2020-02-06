@@ -26,7 +26,7 @@ export class ShoppingList extends React.Component {
                     <hr/>
                     <Row>
                         <Col sm>
-                            <Accordion>
+                            <Accordion defaultActiveKey="0">
                                 <Card>
                                     <Accordion.Toggle as={Card.Header} variant="link" eventKey="0">
                                         Vegetables
@@ -56,7 +56,7 @@ export class ShoppingList extends React.Component {
                         </Col>
                         <Col sm={2}></Col>
                         <Col sm>
-                            <Accordion>
+                            <Accordion defaultActiveKey="1">
                                 <Card>
                                     <Accordion.Toggle as={Card.Header} variant="link" eventKey="1">
                                         Fruits
@@ -88,7 +88,7 @@ export class ShoppingList extends React.Component {
                     <hr/>
                     <Row>
                         <Col sm>
-                            <Accordion>
+                            <Accordion defaultActiveKey="0">
                                 <Card>
                                     <Accordion.Toggle as={Card.Header} variant="link" eventKey="0">
                                         Cereals
@@ -119,7 +119,7 @@ export class ShoppingList extends React.Component {
                         <Col sm={2}></Col>
 
                         <Col sm>
-                            <Accordion>
+                            <Accordion defaultActiveKey="0">
                                 <Card>
                                     <Accordion.Toggle as={Card.Header} variant="link" eventKey="1">
                                         Beans & Nuts
