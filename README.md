@@ -12,3 +12,10 @@ Install bootstrap:
 ```
 npm install react-bootstrap bootstrap
 ```
+
+Install react-landing-page libraries:
+```
+npm i react-landing-page
+npm i rebass@next
+npm i styled-components
+```

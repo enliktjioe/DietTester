@@ -2,7 +2,7 @@ import * as React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
-export class NavBar extends React.Component {
+export class NavBarLoggedIn extends React.Component {
     render() {
         return (
             <div>
@@ -13,10 +13,12 @@ export class NavBar extends React.Component {
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="mr-auto">
                                 <Nav.Link href="./home">Home</Nav.Link>
+                                <Nav.Link href="#MyPlans">My Plans</Nav.Link>
                                 <Nav.Link href="/diet-plan">Food Plans</Nav.Link>
+                                <Nav.Link href="/daily-survey">Daily Survey</Nav.Link>
                             </Nav>
                             <Nav inline>
-                                <Nav.Link inline href="./logged-in-home">Log In</Nav.Link>
+                                <Nav.Link inline href="#LogOut">Log Out</Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
                     </Navbar>
@@ -26,4 +28,4 @@ export class NavBar extends React.Component {
     }
 }
 
-export default NavBar;
+export default NavBarLoggedIn;
