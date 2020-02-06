@@ -139,7 +139,7 @@ export class ShoppingList extends React.Component {
                     </Row>
                     <Row>
                         <Col md={{ span: 6, offset: 8 }}>
-                            <Button style={{width: '350px'}} href="./shopping-list" variant="outline-info" size="lg" block>DONE</Button>
+                            <Button style={{width: '350px'}} href="./menu" variant="outline-info" size="lg" block>DONE</Button>
                         </Col>
                     </Row>
                 </Container>
