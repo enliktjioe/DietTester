@@ -1,22 +1,10 @@
 import * as React from "react";
-import {Heading, Flex} from 'rebass'
-import {
-    CallToAction, Section, Checklist, Testimony
-} from 'react-landing-page'
-import NavBar from "../navbar/NavBar";
+import { Button } from 'react-bootstrap';
 
-const featherCheckmark = <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24" height="24"
-    viewBox="0 0 24 24"
-    fill="none" stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
->
-    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-    <polyline points="22 4 12 14.01 9 11.01"/>
-</svg>
+import {Heading, Flex} from 'rebass'
+import {Testimony} from 'react-landing-page'
+import NavBar from "../navbar/NavBar";
+import "./Home.css";
 
 export class Home extends React.Component {
     state = {showSideNav: false}
@@ -33,41 +21,29 @@ export class Home extends React.Component {
 
             <div id="home-container">
                 <NavBar/>
-                <Heading textAlign="center">Build a healthy life
-                    <h5>7-Day Diet Menu</h5>
-                </Heading>
 
-                <div
-                    style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center"
-                    }}
-                >
-                    <iframe src="//www.youtube.com/embed/wRKoRvFwNfY" width="630" height="354"></iframe>
-                </div>
+                <section id="main">
+                    <div className="main-text">
+                        Want to try <span>something new</span>, but don't know where to start?
+                        <br /> Tons of diets out there <br />
+                        but choosing one is difficult?
+                    </div>
+                    <div className="sub-main-text">
+                        Get started with our 7-day meal plan on one specific diet, 
+                        <br /> rate it every evening and
+                        <br />a few weeks of testing different food plans
+                        <br />and see which one suits you the best!
+                    </div>
 
+                    <div className="call-to-action">
+                        <br />
+                        <Button href='./logged-in-home' variant="outline-success">START YOUR FREE PLAN</Button>
+                    </div>
 
-                <div
-                    style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center"
-                    }}
-                >
-                    <CallToAction href='./logged-in-home' mt={3}>START YOUR FREE PLAN</CallToAction>
-                </div>
-
-                <Section
-                    // width={1}
-                    heading="Why you should join?"
-                    subhead="here are some of the science facts"
-                >
-                    <Checklist
-                        children={["Benefit 1", "Benefit 2", "Benefit 3"]}
-                        checkmark={featherCheckmark}
-                    />
-                </Section>
+                    <div className="call-to-action-text">
+                        JOIN Diet Tester & experience the good aspects of many different diets! SIGN up to START!
+                    </div>
+                </section>
 
                 <Heading textAlign="center">What people say</Heading>
                 <Flex alignItems="flex-end" justifyContent="space-around">
