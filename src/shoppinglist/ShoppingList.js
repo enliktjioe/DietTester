@@ -26,7 +26,7 @@ export class ShoppingList extends React.Component {
                     <hr/>
                     <Row>
                         <Col sm>
-                            <Accordion>
+                            <Accordion defaultActiveKey="0">
                                 <Card>
                                     <Accordion.Toggle as={Card.Header} variant="link" eventKey="0">
                                         Vegetables
@@ -39,15 +39,59 @@ export class ShoppingList extends React.Component {
                                                 </InputGroup.Prepend>
                                                 <InputGroup.Text id="inputGroup-sizing-sm">Tomatoes</InputGroup.Text>
                                             </InputGroup>
-                                        </Card.Body>
-                                    </Accordion.Collapse>
-                                    <Accordion.Collapse eventKey="0">
-                                        <Card.Body>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Potatoes"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Potatoes</InputGroup.Text>
+                                            </InputGroup>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
                                                     <InputGroup.Checkbox aria-label="Onions"/>
                                                 </InputGroup.Prepend>
-                                                <InputGroup.Text id="inputGroup-sizing-sm">Onioons?</InputGroup.Text>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Onioons</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Onions"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Chives (snipped)</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Onions"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Rapeseed oil</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Onions"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Olive oil</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Tumeric"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Tumeric</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Onions"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Spinach</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Baby Spinach"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Baby spinach</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Onions"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Paprika</InputGroup.Text>
                                             </InputGroup>
                                         </Card.Body>
                                     </Accordion.Collapse>
@@ -56,12 +100,12 @@ export class ShoppingList extends React.Component {
                         </Col>
                         <Col sm={2}/>
                         <Col sm>
-                            <Accordion>
+                            <Accordion defaultActiveKey="0">
                                 <Card>
                                     <Accordion.Toggle as={Card.Header} variant="link" eventKey="1">
                                         Fruits
                                     </Accordion.Toggle>
-                                    <Accordion.Collapse eventKey="1">
+                                    <Accordion.Collapse eventKey="0">
                                         <Card.Body>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
@@ -69,15 +113,29 @@ export class ShoppingList extends React.Component {
                                                 </InputGroup.Prepend>
                                                 <InputGroup.Text id="inputGroup-sizing-sm">Apples</InputGroup.Text>
                                             </InputGroup>
-                                        </Card.Body>
-                                    </Accordion.Collapse>
-                                    <Accordion.Collapse eventKey="1">
-                                        <Card.Body>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
                                                     <InputGroup.Checkbox aria-label="Pears"/>
                                                 </InputGroup.Prepend>
                                                 <InputGroup.Text id="inputGroup-sizing-sm">Pears</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Bananas"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Bananas</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Mango"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Mango</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Lemon"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Lemon juice</InputGroup.Text>
                                             </InputGroup>
                                         </Card.Body>
                                     </Accordion.Collapse>
@@ -88,28 +146,72 @@ export class ShoppingList extends React.Component {
                     <hr/>
                     <Row>
                         <Col sm>
-                            <Accordion>
+                            <Accordion defaultActiveKey="0">
                                 <Card>
                                     <Accordion.Toggle as={Card.Header} variant="link" eventKey="0">
-                                        Cereals
+                                        Cereals & seeds
                                     </Accordion.Toggle>
                                     <Accordion.Collapse eventKey="0">
                                         <Card.Body>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
-                                                    <InputGroup.Checkbox aria-label="Rice"/>
+                                                    <InputGroup.Checkbox aria-label="Pumpkin seeds"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Pumpkin seeds</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="hulled hemp seeds"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Hulled hemp seeds</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Mushrooms"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Mushrooms</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Onions"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Maple syrup</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Mushrooms"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Garlic powder</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Mushrooms"/>
                                                 </InputGroup.Prepend>
                                                 <InputGroup.Text id="inputGroup-sizing-sm">Rice</InputGroup.Text>
                                             </InputGroup>
-                                        </Card.Body>
-                                    </Accordion.Collapse>
-                                    <Accordion.Collapse eventKey="0">
-                                        <Card.Body>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
-                                                    <InputGroup.Checkbox aria-label="Coconut Oil"/>
+                                                    <InputGroup.Checkbox aria-label="Mushrooms"/>
                                                 </InputGroup.Prepend>
-                                                <InputGroup.Text id="inputGroup-sizing-sm">Oat</InputGroup.Text>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Rice milk</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Onions"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Polenta</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Onions"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Plain flour</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Onions"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Baking powder</InputGroup.Text>
                                             </InputGroup>
                                         </Card.Body>
                                     </Accordion.Collapse>
@@ -119,30 +221,49 @@ export class ShoppingList extends React.Component {
                         <Col sm={2}></Col>
 
                         <Col sm>
-                            <Accordion>
+                            <Accordion defaultActiveKey="0">
                                 <Card>
                                     <Accordion.Toggle as={Card.Header} variant="link" eventKey="1">
                                         Beans & Nuts
                                     </Accordion.Toggle>
-                                    <Accordion.Collapse eventKey="1">
+                                    <Accordion.Collapse eventKey="0">
                                         <Card.Body>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
-                                                    <InputGroup.Checkbox aria-label="Red Beans"/>
+                                                    <InputGroup.Checkbox aria-label="Soybeans"/>
                                                 </InputGroup.Prepend>
-                                                <InputGroup.Text id="inputGroup-sizing-sm">Red Beans</InputGroup.Text>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Soy beans</InputGroup.Text>
                                             </InputGroup>
-                                        </Card.Body>
-                                    </Accordion.Collapse>
-                                    <Accordion.Collapse eventKey="0">
-                                        <Card.Body>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Onions"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Light soy sauce</InputGroup.Text>
+                                            </InputGroup>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
                                                     <InputGroup.Checkbox aria-label="Pistachios"/>
                                                 </InputGroup.Prepend>
                                                 <InputGroup.Text id="inputGroup-sizing-sm">Pistachios</InputGroup.Text>
                                             </InputGroup>
-
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Almond milk"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Almond milk</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Onions"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Coconut milk</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Tofu"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Tofu</InputGroup.Text>
+                                            </InputGroup>
                                         </Card.Body>
                                     </Accordion.Collapse>
                                 </Card>
@@ -152,11 +273,17 @@ export class ShoppingList extends React.Component {
                     <hr/>
                     <br/>
                     <Row>
-                        <Col md={{span: 6, offset: 8}}>
+                        <Col></Col>
+                        <Col>
+                            <Button style={{width: '50vh'}} href="./menu" variant="outline-info" size="lg"
+                                    disabled>Send to Phone</Button>
+                        </Col>
+                        <Col>
                             <Button style={{width: '50vh'}} href="./menu" variant="outline-info" size="lg"
                                     block>DONE</Button>
                         </Col>
                     </Row>
+                    <Row></Row>
                 </Container>
             </div>
 
