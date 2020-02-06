@@ -25,7 +25,7 @@ export class LoggedInHome extends React.Component {
 
                                 </Card.Body>
                                 <Card.Footer>
-                                    <Button href="./menu" variant="outline-info" size="sm">Go
+                                    <Button href="./menu" variant="outline-success" size="sm">Go
                                         vegan</Button>
                                 </Card.Footer>
                             </Card>
@@ -37,7 +37,7 @@ export class LoggedInHome extends React.Component {
                                     </Card.Text>
                                 </Card.Body>
                                 <Card.Footer>
-                                    <Button variant="outline-info" size="sm" disabled>Go vegetarian</Button>
+                                    <Button variant="outline-success" size="sm" disabled>Go vegetarian</Button>
                                 </Card.Footer>
                             </Card>
                             <Card>
@@ -49,7 +49,7 @@ export class LoggedInHome extends React.Component {
 
                                 </Card.Body>
                                 <Card.Footer>
-                                    <Button variant="outline-info" size="sm" disabled>Go ketogenic</Button>
+                                    <Button variant="outline-success" size="sm" disabled>Go ketogenic</Button>
                                 </Card.Footer>
                             </Card>
                         </CardDeck>
@@ -66,7 +66,7 @@ export class LoggedInHome extends React.Component {
 
                                 </Card.Body>
                                 <Card.Footer>
-                                    <Button variant="outline-info" size="sm" disabled>Go macrobiotic</Button>
+                                    <Button variant="outline-success" size="sm" disabled>Go macrobiotic</Button>
                                 </Card.Footer>
                             </Card>
                             <Card>
@@ -78,7 +78,7 @@ export class LoggedInHome extends React.Component {
 
                                 </Card.Body>
                                 <Card.Footer>
-                                    <Button variant="outline-info" size="sm" disabled>Go low sugar</Button>
+                                    <Button variant="outline-success" size="sm" disabled>Go low sugar</Button>
                                 </Card.Footer>
                             </Card>
                             <Card>
@@ -89,7 +89,7 @@ export class LoggedInHome extends React.Component {
                                     </Card.Text>
                                 </Card.Body>
                                 <Card.Footer>
-                                    <Button variant="outline-info" size="sm" disabled>Go paleo</Button>
+                                    <Button variant="outline-success" size="sm" disabled>Go paleo</Button>
                                 </Card.Footer>
                             </Card>
                         </CardDeck>
