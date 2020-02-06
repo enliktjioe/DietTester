@@ -26,7 +26,7 @@ export class Menu extends React.Component {
             <div>
                 <NavBarLoggedIn/>
                 <h1>7-Day meal plan</h1>
-                <Card border="success" style={{ width: '1170px', maxWidth: '1170px', margin: 'auto'}}>
+                <Card border="success" style={{ width: '1070px', maxWidth: '1070px', margin: 'auto'}}>
                     <Card.Body>
                         <Card.Title>Fact about being a vegan</Card.Title>
                         <Card.Text>

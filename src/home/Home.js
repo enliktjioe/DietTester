@@ -46,7 +46,7 @@ export class Home extends React.Component {
                     </div>
                     <br/> <br/>
                     <div className="call-to-action">
-                        <Button href='./logged-in-home' variant="outline-success">START YOUR FREE PLAN</Button>
+                        <Button href='./logged-in-home' size='lg' variant="outline-success">START YOUR FREE PLAN</Button>
                     </div>
                     <br/><br/>
                     <div className="call-to-action-text">

@@ -466,7 +466,7 @@ export class ShoppingList extends React.Component {
                                     disabled>Send to Phone</Button>
                         </Col>
                         <Col>
-                            <Button style={{width: '50vh'}} href="./menu" variant="outline-info" size="lg"
+                            <Button style={{width: '50vh'}} href="./my-diet" variant="outline-info" size="lg"
                                     block>DONE</Button>
                         </Col>
                     </Row>
