@@ -275,7 +275,7 @@ export class ShoppingList extends React.Component {
                     <Row>
                         <Col></Col>
                         <Col>
-                            <Button style={{width: '50vh'}} href="./menu" variant="outline-info" size="lg"
+                            <Button style={{width: '50vh'}} variant="outline-info" size="lg" variant="outline-warning"
                                     disabled>Send to Phone</Button>
                         </Col>
                         <Col>
