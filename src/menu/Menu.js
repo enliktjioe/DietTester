@@ -15,6 +15,14 @@ export class Menu extends React.Component {
             <div>
                 <NavBarLoggedIn/>
                 <h1>7-Day menu</h1>
+                <Card border="info" style={{ width: '1078px', maxWidth: '1078px', margin: 'auto'}}>
+                    <Card.Body>
+                        <Card.Title>Fact about being a vegan</Card.Title>
+                        <Card.Text>
+                            The fact
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
                 <Carousel style={{padding: '20px', width: '1400px', maxWidth: '1400px', margin: 'auto'}}>
                     <Carousel.Item>
                         <Jumbotron
@@ -22,7 +30,7 @@ export class Menu extends React.Component {
                             <Container>
                                 <Row>
                                     <Col>
-                                        <Card style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
+                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
                                             <Card.Body>
                                                 <Card.Title>07.02.2020</Card.Title>
                                                 <Card.Text>
@@ -79,7 +87,7 @@ export class Menu extends React.Component {
                                         </Card>
                                     </Col>
                                     <Col>
-                                        <Card style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
+                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
                                             <Card.Body>
                                                 <Card.Title>08.02.2020</Card.Title>
                                                 <Card.Text>
@@ -136,7 +144,7 @@ export class Menu extends React.Component {
                                         </Card>
                                     </Col>
                                     <Col>
-                                        <Card style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
+                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
                                             <Card.Body>
                                                 <Card.Title>09.02.2020</Card.Title>
                                                 <Card.Text>
@@ -204,7 +212,7 @@ export class Menu extends React.Component {
                             <Container>
                                 <Row>
                                     <Col>
-                                        <Card style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
+                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
                                             <Card.Body>
                                                 <Card.Title>08.02.2020</Card.Title>
                                                 <Card.Text>
@@ -261,7 +269,7 @@ export class Menu extends React.Component {
                                         </Card>
                                     </Col>
                                     <Col>
-                                        <Card style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
+                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
                                             <Card.Body>
                                                 <Card.Title>09.02.2020</Card.Title>
                                                 <Card.Text>
@@ -318,7 +326,7 @@ export class Menu extends React.Component {
                                         </Card>
                                     </Col>
                                     <Col>
-                                        <Card style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
+                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
                                             <Card.Body>
                                                 <Card.Title>10.02.2020</Card.Title>
                                                 <Card.Text>
@@ -386,7 +394,7 @@ export class Menu extends React.Component {
                             <Container>
                                 <Row>
                                     <Col>
-                                        <Card style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
+                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
                                             <Card.Body>
                                                 <Card.Title>09.02.2020</Card.Title>
                                                 <Card.Text>
@@ -443,7 +451,7 @@ export class Menu extends React.Component {
                                         </Card>
                                     </Col>
                                     <Col>
-                                        <Card style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
+                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
                                             <Card.Body>
                                                 <Card.Title>10.02.2020</Card.Title>
                                                 <Card.Text>
@@ -500,7 +508,7 @@ export class Menu extends React.Component {
                                         </Card>
                                     </Col>
                                     <Col>
-                                        <Card style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
+                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
                                             <Card.Body>
                                                 <Card.Title>11.02.2020</Card.Title>
                                                 <Card.Text>
@@ -568,7 +576,7 @@ export class Menu extends React.Component {
                             <Container>
                                 <Row>
                                     <Col>
-                                        <Card style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
+                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
                                             <Card.Body>
                                                 <Card.Title>10.02.2020</Card.Title>
                                                 <Card.Text>
@@ -625,7 +633,7 @@ export class Menu extends React.Component {
                                         </Card>
                                     </Col>
                                     <Col>
-                                        <Card style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
+                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
                                             <Card.Body>
                                                 <Card.Title>11.02.2020</Card.Title>
                                                 <Card.Text>
@@ -682,7 +690,7 @@ export class Menu extends React.Component {
                                         </Card>
                                     </Col>
                                     <Col>
-                                        <Card style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
+                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
                                             <Card.Body>
                                                 <Card.Title>12.02.2020</Card.Title>
                                                 <Card.Text>
@@ -750,7 +758,7 @@ export class Menu extends React.Component {
                             <Container>
                                 <Row>
                                     <Col>
-                                        <Card style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
+                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
                                             <Card.Body>
                                                 <Card.Title>11.02.2020</Card.Title>
                                                 <Card.Text>
@@ -807,7 +815,7 @@ export class Menu extends React.Component {
                                         </Card>
                                     </Col>
                                     <Col>
-                                        <Card style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
+                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
                                             <Card.Body>
                                                 <Card.Title>12.02.2020</Card.Title>
                                                 <Card.Text>
@@ -864,7 +872,7 @@ export class Menu extends React.Component {
                                         </Card>
                                     </Col>
                                     <Col>
-                                        <Card style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
+                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
                                             <Card.Body>
                                                 <Card.Title>13.02.2020</Card.Title>
                                                 <Card.Text>
@@ -932,7 +940,7 @@ export class Menu extends React.Component {
                             <Container>
                                 <Row>
                                     <Col>
-                                        <Card style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
+                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
                                             <Card.Body>
                                                 <Card.Title>12.02.2020</Card.Title>
                                                 <Card.Text>
@@ -989,7 +997,7 @@ export class Menu extends React.Component {
                                         </Card>
                                     </Col>
                                     <Col>
-                                        <Card style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
+                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
                                             <Card.Body>
                                                 <Card.Title>13.02.2020</Card.Title>
                                                 <Card.Text>
@@ -1046,7 +1054,7 @@ export class Menu extends React.Component {
                                         </Card>
                                     </Col>
                                     <Col>
-                                        <Card style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
+                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
                                             <Card.Body>
                                                 <Card.Title>14.02.2020</Card.Title>
                                                 <Card.Text>
@@ -1114,7 +1122,7 @@ export class Menu extends React.Component {
                             <Container>
                                 <Row>
                                     <Col>
-                                        <Card style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
+                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
                                             <Card.Body>
                                                 <Card.Title>13.02.2020</Card.Title>
                                                 <Card.Text>
@@ -1171,7 +1179,7 @@ export class Menu extends React.Component {
                                         </Card>
                                     </Col>
                                     <Col>
-                                        <Card style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
+                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
                                             <Card.Body>
                                                 <Card.Title>14.02.2020</Card.Title>
                                                 <Card.Text>
@@ -1228,7 +1236,7 @@ export class Menu extends React.Component {
                                         </Card>
                                     </Col>
                                     <Col>
-                                        <Card style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
+                                        <Card border="info" style={{width: '20rem', maxWidth: '20rem', margin: 'auto'}}>
                                             <Card.Body>
                                                 <Card.Title>15.02.2020</Card.Title>
                                                 <Card.Text>
