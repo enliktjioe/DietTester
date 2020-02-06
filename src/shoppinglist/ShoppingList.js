@@ -3,12 +3,12 @@ import { MDBSelect } from "mdbreact";
 import Media from "react-bootstrap/Media";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
-import {Button} from "react-bootstrap";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
 
 export class ShoppingList extends React.Component {
     render() {
@@ -18,27 +18,25 @@ export class ShoppingList extends React.Component {
                 <body>
                 <Media>
                     <Media.Body>
-                        <h2>Shopping list</h2>
+                        <h2 style={{textAlign: "center"}}>Shopping list</h2>
                     </Media.Body>
                 </Media>
 
                 <Container>
                     <Row>
                         <Col sm>
-                        <Accordion defaultActiveKey="0">
+                        <Accordion>
                             <Card>
-                                <Card.Header>
-                                    <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                        Tomato
+                                    <Accordion.Toggle as={Card.Header} variant="link" eventKey="0">
+                                        Vegetables
                                     </Accordion.Toggle>
-                                </Card.Header>
                                 <Accordion.Collapse eventKey="0">
                                     <Card.Body>
                                         <InputGroup className="mb-3">
                                             <InputGroup.Prepend>
-                                                <InputGroup.Checkbox aria-label="Mushrooms" />
+                                                <InputGroup.Checkbox aria-label="Tomatoes" />
                                             </InputGroup.Prepend>
-                                            <InputGroup.Text id="inputGroup-sizing-sm">Musshrooms!</InputGroup.Text>                                </InputGroup>
+                                            <InputGroup.Text id="inputGroup-sizing-sm">Tomatoes</InputGroup.Text>                                </InputGroup>
                                     </Card.Body>
                                 </Accordion.Collapse>
                                 <Accordion.Collapse eventKey="0">
@@ -55,13 +53,11 @@ export class ShoppingList extends React.Component {
                         </Col>
                         <Col sm></Col>
                         <Col sm>
-                        <Accordion defaultActiveKey="1">
+                        <Accordion>
                             <Card>
-                                <Card.Header>
-                                    <Accordion.Toggle as={Button} variant="link" eventKey="1">
+                                    <Accordion.Toggle as={Card.Header} variant="link" eventKey="1">
                                         Fruits
                                     </Accordion.Toggle>
-                                </Card.Header>
                                 <Accordion.Collapse eventKey="1">
                                     <Card.Body>
                                         <InputGroup className="mb-3">
@@ -86,20 +82,18 @@ export class ShoppingList extends React.Component {
                     </Row>
                     <Row>
                         <Col sm>
-                        <Accordion defaultActiveKey="0">
+                        <Accordion>
                             <Card>
-                                <Card.Header>
-                                    <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                        Where is the lamb sauce?
+                                    <Accordion.Toggle as={Card.Header} variant="link" eventKey="0">
+                                        Cereals
                                     </Accordion.Toggle>
-                                </Card.Header>
                                 <Accordion.Collapse eventKey="0">
                                     <Card.Body>
                                         <InputGroup className="mb-3">
                                             <InputGroup.Prepend>
-                                                <InputGroup.Checkbox aria-label="Soy sauce" />
+                                                <InputGroup.Checkbox aria-label="Rice" />
                                             </InputGroup.Prepend>
-                                            <InputGroup.Text id="inputGroup-sizing-sm">Soy for sauce!</InputGroup.Text>                                </InputGroup>
+                                            <InputGroup.Text id="inputGroup-sizing-sm">Rice</InputGroup.Text>                                </InputGroup>
                                     </Card.Body>
                                 </Accordion.Collapse>
                                 <Accordion.Collapse eventKey="0">
@@ -108,12 +102,17 @@ export class ShoppingList extends React.Component {
                                             <InputGroup.Prepend>
                                                 <InputGroup.Checkbox aria-label="Coconut Oil" />
                                             </InputGroup.Prepend>
-                                            <InputGroup.Text id="inputGroup-sizing-sm">Cocolnut oilves?</InputGroup.Text>                                </InputGroup>
+                                            <InputGroup.Text id="inputGroup-sizing-sm">Oat</InputGroup.Text>                                </InputGroup>
                                     </Card.Body>
                                 </Accordion.Collapse>
                             </Card>
                         </Accordion>
                     </Col>
+                    </Row>
+                    <Row>
+                        <Col md={{ span: 6, offset: 8 }}>
+                            <Button style={{width: '350px'}} href="./shopping-list" variant="outline-info" size="lg" block>DONE</Button>
+                        </Col>
                     </Row>
                 </Container>
                 </body>
