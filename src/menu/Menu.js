@@ -6,6 +6,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Jumbotron from "react-bootstrap/esm/Jumbotron";
 import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
 
 export class Menu extends React.Component {
     render() {
@@ -1282,7 +1283,13 @@ export class Menu extends React.Component {
                     </Carousel.Item>
                 </Carousel>
                 <p>
-                    <Button style={{width: '400px', maxWidth: '400px', margin: 'auto'}} href="#Export" variant="outline-info" size="lg" block>Sync with calendar</Button>
+                    <Container style={{width: '290px', maxWidth: '290px', margin: 'auto'}}>
+                        <Form>
+                            <Form.Group controlId="formBasicCheckbox">
+                                <Form.Check type="checkbox" label="Sync my meal plan with calendar" />
+                            </Form.Group>
+                        </Form>
+                    </Container>
                 </p>
                 <p>
                     <Button style={{width: '400px', maxWidth: '400px', margin: 'auto'}} href="./shopping-list" variant="outline-info" size="lg" block>Confirm</Button>
