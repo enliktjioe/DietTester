@@ -1292,6 +1292,9 @@ export class Menu extends React.Component {
                     </Container>
                 </p>
                 <p>
+                    <Button style={{width: '400px', maxWidth: '400px', margin: 'auto'}} href="./shopping-list" variant="outline-danger" size="lg" block>Cancel</Button>
+                </p>
+                <p>
                     <Button style={{width: '400px', maxWidth: '400px', margin: 'auto'}} href="./shopping-list" variant="outline-info" size="lg" block>Confirm</Button>
                 </p>
             </div>
