@@ -13,7 +13,6 @@ class App extends React.Component {
 
     render() {
         return (
-
             <Router>
                 <NavBar/>
 
@@ -23,7 +22,6 @@ class App extends React.Component {
                     </Route>
                     <Route path="/home" exact component={Home}/>
                     <Route path="/logged-in-home" exact component={LoggedInHome}/>
-                    <Route path="/navbar" exact component={NavBar}/>
                     <Route path="/diet-plan" exact component={DietPlan}/>
                     <Route path="/daily-survey" exact component={DailySurvey}/>
 

@@ -11,7 +11,6 @@ export class Menu extends React.Component {
     render() {
         return (
             <div>
-
                 <h1>7-Day menu</h1>
                 <Carousel style={{padding: '20px', width: '1400px', maxWidth: '1400px', margin: 'auto'}}>
                     <Carousel.Item>
