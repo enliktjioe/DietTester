@@ -11,7 +11,6 @@ import {Recipe} from "./recipe/Recipe";
 import ChosenDiet from "./chosendiet/ChosenDiet";
 
 class App extends React.Component {
-
     render() {
         return (
             <Router>
@@ -28,7 +27,6 @@ class App extends React.Component {
                     <Route path="/shopping-list" exact component={ShoppingList}/>
                     <Route path="/recipe" excact component={Recipe}/>
                 </Switch>
-
             </Router>
         );
     }
