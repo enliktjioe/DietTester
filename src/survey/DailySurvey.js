@@ -2,6 +2,7 @@ import * as React from "react";
 import './DailySurvey.css'
 import Form from "react-bootstrap/Form";
 import {Button} from "react-bootstrap";
+import NavBarLoggedIn from "../navbarloggedin/NavBarLoggedIn";
 
 export class DailySurvey extends React.Component {
 
@@ -25,7 +26,7 @@ export class DailySurvey extends React.Component {
     render() {
         return (
             <div id="daily-survey-container">
-
+                <NavBarLoggedIn/>
                 <div id="survey">
                     <h2>
                         Daily wellness survey

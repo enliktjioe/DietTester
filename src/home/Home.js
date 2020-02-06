@@ -1,70 +1,72 @@
 import * as React from "react";
-import { Heading, Subhead, Flex } from 'rebass'
+import {Heading, Flex} from 'rebass'
 import {
-  CallToAction, Section, Checklist, Testimony
+    CallToAction, Section, Checklist, Testimony
 } from 'react-landing-page'
+import NavBar from "../navbar/NavBar";
 
 const featherCheckmark = <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="24" height="24"
-  viewBox="0 0 24 24"
-  fill="none" stroke="currentColor"
-  strokeWidth="2"
-  strokeLinecap="round"
-  strokeLinejoin="round"
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24"
+    viewBox="0 0 24 24"
+    fill="none" stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
 >
-  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-  <polyline points="22 4 12 14.01 9 11.01"/>
+    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+    <polyline points="22 4 12 14.01 9 11.01"/>
 </svg>
 
 export class Home extends React.Component {
-    state = {showSideNav:false}
- 
-    handleSideNavToggle = ()=>{
-        this.setState((currentState)=>{
+    state = {showSideNav: false}
+
+    handleSideNavToggle = () => {
+        this.setState((currentState) => {
             return {showSideNav: !currentState.showSideNav}
         })
-    }
-    
+    };
+
     render() {
 
         return (
-            
+
             <div id="home-container">
+                <NavBar/>
                 <Heading textAlign="center">Build a healthy life
-                    <h5 textAlign="center">7-Day Diet Menu</h5>
+                    <h5>7-Day Diet Menu</h5>
                 </Heading>
-                
-                <div 
-                            style={{
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center"
-                                }}
-                        >
-                            <iframe  src="//www.youtube.com/embed/wRKoRvFwNfY" width="630" height="354"></iframe>
-                        </div>
 
-
-                <div 
+                <div
                     style={{
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center"
-                        }}
+                    }}
+                >
+                    <iframe src="//www.youtube.com/embed/wRKoRvFwNfY" width="630" height="354"></iframe>
+                </div>
+
+
+                <div
+                    style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center"
+                    }}
                 >
                     <CallToAction href='./logged-in-home' mt={3}>START YOUR FREE PLAN</CallToAction>
                 </div>
-                
+
                 <Section
                     // width={1}
                     heading="Why you should join?"
                     subhead="here are some of the science facts"
                 >
-                <Checklist
-                    children={["Benefit 1", "Benefit 2", "Benefit 3"]}
-                    checkmark={featherCheckmark}
-                />
+                    <Checklist
+                        children={["Benefit 1", "Benefit 2", "Benefit 3"]}
+                        checkmark={featherCheckmark}
+                    />
                 </Section>
 
                 <Heading textAlign="center">What people say</Heading>
@@ -91,9 +93,8 @@ export class Home extends React.Component {
                     </Testimony>
 
                 </Flex>
-
-
             </div>
+
         )
     }
 }
