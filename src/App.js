@@ -20,6 +20,7 @@ class App extends React.Component {
                     <Route exact path="/" component={Home}>
                         <Redirect to="/home"/>
                     </Route>
+
                     <Route path="/home" exact component={Home}/>
                     <Route path="/logged-in-home" exact component={LoggedInHome}/>
                     <Route path="/diet-plan" exact component={DietPlan}/>

@@ -41,9 +41,57 @@ export class ShoppingList extends React.Component {
                                             </InputGroup>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Soybeans"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Tomato paste</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
                                                     <InputGroup.Checkbox aria-label="Potatoes"/>
                                                 </InputGroup.Prepend>
                                                 <InputGroup.Text id="inputGroup-sizing-sm">Potatoes</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Mushrooms"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Carrots</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Mushrooms"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Cucumbers</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Soybeans"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Bell peppers</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Soybeans"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Cauliflower florets</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Soybeans"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Eggplant</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Soybeans"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Fresh squash</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Soybeans"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Zucchini</InputGroup.Text>
                                             </InputGroup>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
@@ -73,7 +121,13 @@ export class ShoppingList extends React.Component {
                                                 <InputGroup.Prepend>
                                                     <InputGroup.Checkbox aria-label="Tumeric"/>
                                                 </InputGroup.Prepend>
-                                                <InputGroup.Text id="inputGroup-sizing-sm">Tumeric</InputGroup.Text>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Turmeric (ground)</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Lemon"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Ground cumin</InputGroup.Text>
                                             </InputGroup>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
@@ -93,12 +147,166 @@ export class ShoppingList extends React.Component {
                                                 </InputGroup.Prepend>
                                                 <InputGroup.Text id="inputGroup-sizing-sm">Paprika</InputGroup.Text>
                                             </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Mushrooms"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Peppers</InputGroup.Text>
+                                            </InputGroup>
                                         </Card.Body>
                                     </Accordion.Collapse>
                                 </Card>
                             </Accordion>
                         </Col>
                         <Col sm={2}/>
+                        <Col sm>
+                            <Accordion defaultActiveKey="0">
+                                <Card>
+                                    <Accordion.Toggle as={Card.Header} variant="link" eventKey="0">
+                                        Cereals & seeds & other interesting goods
+                                    </Accordion.Toggle>
+                                    <Accordion.Collapse eventKey="0">
+                                        <Card.Body>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Pumpkin seeds"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Pumpkin seeds</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="hulled hemp seeds"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Hulled hemp seeds</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Lemon"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Tartar</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Lemon"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Baking soda</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Mushrooms"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Mushrooms</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Mushrooms"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Vegan puff pastry</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Mushrooms"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Balsamic glaze</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Onions"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Maple syrup</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Lemon"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Malt syrup</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Mushrooms"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Garlic</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Mushrooms"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Garlic powder</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Mushrooms"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Rice (brown)</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Mushrooms"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Lavash</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Soybeans"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Fresh thyem</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Soybeans"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Fresh sage</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Lemon"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Cliantro</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Mushrooms"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Rice milk</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Onions"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Polenta</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Onions"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Plain flour</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Soybeans"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Oat flour</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Mushrooms"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Pita bread</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Onions"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Baking powder</InputGroup.Text>
+                                            </InputGroup>
+                                        </Card.Body>
+                                    </Accordion.Collapse>
+                                </Card>
+                            </Accordion>
+                        </Col>
+                    </Row>
+                    <hr/>
+                    <Row>
                         <Col sm>
                             <Accordion defaultActiveKey="0">
                                 <Card>
@@ -125,6 +333,12 @@ export class ShoppingList extends React.Component {
                                                 </InputGroup.Prepend>
                                                 <InputGroup.Text id="inputGroup-sizing-sm">Bananas</InputGroup.Text>
                                             </InputGroup>
+                                        <InputGroup className="mb-3">
+                                            <InputGroup.Prepend>
+                                                <InputGroup.Checkbox aria-label="Soybeans"/>
+                                            </InputGroup.Prepend>
+                                            <InputGroup.Text id="inputGroup-sizing-sm">Lime</InputGroup.Text>
+                                        </InputGroup>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
                                                     <InputGroup.Checkbox aria-label="Mango"/>
@@ -137,87 +351,30 @@ export class ShoppingList extends React.Component {
                                                 </InputGroup.Prepend>
                                                 <InputGroup.Text id="inputGroup-sizing-sm">Lemon juice</InputGroup.Text>
                                             </InputGroup>
-                                        </Card.Body>
-                                    </Accordion.Collapse>
-                                </Card>
-                            </Accordion>
-                        </Col>
-                    </Row>
-                    <hr/>
-                    <Row>
-                        <Col sm>
-                            <Accordion defaultActiveKey="0">
-                                <Card>
-                                    <Accordion.Toggle as={Card.Header} variant="link" eventKey="0">
-                                        Cereals & seeds
-                                    </Accordion.Toggle>
-                                    <Accordion.Collapse eventKey="0">
-                                        <Card.Body>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
-                                                    <InputGroup.Checkbox aria-label="Pumpkin seeds"/>
+                                                    <InputGroup.Checkbox aria-label="Lemon"/>
                                                 </InputGroup.Prepend>
-                                                <InputGroup.Text id="inputGroup-sizing-sm">Pumpkin seeds</InputGroup.Text>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Dates</InputGroup.Text>
                                             </InputGroup>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
-                                                    <InputGroup.Checkbox aria-label="hulled hemp seeds"/>
+                                                    <InputGroup.Checkbox aria-label="Lemon"/>
                                                 </InputGroup.Prepend>
-                                                <InputGroup.Text id="inputGroup-sizing-sm">Hulled hemp seeds</InputGroup.Text>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Avocado</InputGroup.Text>
                                             </InputGroup>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
-                                                    <InputGroup.Checkbox aria-label="Mushrooms"/>
+                                                    <InputGroup.Checkbox aria-label="Lemon"/>
                                                 </InputGroup.Prepend>
-                                                <InputGroup.Text id="inputGroup-sizing-sm">Mushrooms</InputGroup.Text>
-                                            </InputGroup>
-                                            <InputGroup className="mb-3">
-                                                <InputGroup.Prepend>
-                                                    <InputGroup.Checkbox aria-label="Onions"/>
-                                                </InputGroup.Prepend>
-                                                <InputGroup.Text id="inputGroup-sizing-sm">Maple syrup</InputGroup.Text>
-                                            </InputGroup>
-                                            <InputGroup className="mb-3">
-                                                <InputGroup.Prepend>
-                                                    <InputGroup.Checkbox aria-label="Mushrooms"/>
-                                                </InputGroup.Prepend>
-                                                <InputGroup.Text id="inputGroup-sizing-sm">Garlic powder</InputGroup.Text>
-                                            </InputGroup>
-                                            <InputGroup className="mb-3">
-                                                <InputGroup.Prepend>
-                                                    <InputGroup.Checkbox aria-label="Mushrooms"/>
-                                                </InputGroup.Prepend>
-                                                <InputGroup.Text id="inputGroup-sizing-sm">Rice</InputGroup.Text>
-                                            </InputGroup>
-                                            <InputGroup className="mb-3">
-                                                <InputGroup.Prepend>
-                                                    <InputGroup.Checkbox aria-label="Mushrooms"/>
-                                                </InputGroup.Prepend>
-                                                <InputGroup.Text id="inputGroup-sizing-sm">Rice milk</InputGroup.Text>
-                                            </InputGroup>
-                                            <InputGroup className="mb-3">
-                                                <InputGroup.Prepend>
-                                                    <InputGroup.Checkbox aria-label="Onions"/>
-                                                </InputGroup.Prepend>
-                                                <InputGroup.Text id="inputGroup-sizing-sm">Polenta</InputGroup.Text>
-                                            </InputGroup>
-                                            <InputGroup className="mb-3">
-                                                <InputGroup.Prepend>
-                                                    <InputGroup.Checkbox aria-label="Onions"/>
-                                                </InputGroup.Prepend>
-                                                <InputGroup.Text id="inputGroup-sizing-sm">Plain flour</InputGroup.Text>
-                                            </InputGroup>
-                                            <InputGroup className="mb-3">
-                                                <InputGroup.Prepend>
-                                                    <InputGroup.Checkbox aria-label="Onions"/>
-                                                </InputGroup.Prepend>
-                                                <InputGroup.Text id="inputGroup-sizing-sm">Baking powder</InputGroup.Text>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Avocado oil</InputGroup.Text>
                                             </InputGroup>
                                         </Card.Body>
                                     </Accordion.Collapse>
                                 </Card>
                             </Accordion>
                         </Col>
+
                         <Col sm={2}></Col>
 
                         <Col sm>
@@ -236,9 +393,27 @@ export class ShoppingList extends React.Component {
                                             </InputGroup>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Soybeans"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Cashews</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
                                                     <InputGroup.Checkbox aria-label="Onions"/>
                                                 </InputGroup.Prepend>
                                                 <InputGroup.Text id="inputGroup-sizing-sm">Light soy sauce</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Mushrooms"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Chickpeas</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Mushrooms"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Kidney beans</InputGroup.Text>
                                             </InputGroup>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
@@ -254,9 +429,21 @@ export class ShoppingList extends React.Component {
                                             </InputGroup>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Soybeans"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Almond meal</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
                                                     <InputGroup.Checkbox aria-label="Onions"/>
                                                 </InputGroup.Prepend>
                                                 <InputGroup.Text id="inputGroup-sizing-sm">Coconut milk</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Lemon"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">Coconut oil</InputGroup.Text>
                                             </InputGroup>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
@@ -275,11 +462,11 @@ export class ShoppingList extends React.Component {
                     <Row>
                         <Col></Col>
                         <Col>
-                            <Button style={{width: '50vh'}} href="./menu" variant="outline-info" size="lg"
+                            <Button style={{width: '50vh'}} variant="outline-info" size="lg" variant="outline-warning"
                                     disabled>Send to Phone</Button>
                         </Col>
                         <Col>
-                            <Button style={{width: '50vh'}} href="./menu" variant="outline-info" size="lg"
+                            <Button style={{width: '50vh'}} href="./my-diet" variant="outline-info" size="lg"
                                     block>DONE</Button>
                         </Col>
                     </Row>
