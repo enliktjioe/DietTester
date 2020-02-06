@@ -1,14 +1,14 @@
 import * as React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import Card from "react-bootstrap/Card";
+import Jumbotron from "react-bootstrap/esm/Jumbotron";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Jumbotron from "react-bootstrap/esm/Jumbotron";
-import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
 import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 
-export class Menu extends React.Component {
+export class ChosenDiet extends React.Component {
     render() {
         return (
             <div>
@@ -190,10 +190,24 @@ export class Menu extends React.Component {
                                         </Card>
                                     </Col>
                                 </Row>
+                                <Row>
+                                    <Col style={{paddingTop: '50px'}}>
+                                        <Card style={{ width: '1078px', maxWidth: '1078px', margin: 'auto'}}>
+                                            <Card.Body>
+                                                <Card.Title>Snacks</Card.Title>
+                                                <Card.Text>
+                                                    <p>
+
+                                                    </p>
+                                                </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                </Row>
                             </Container>
-                        <Carousel.Caption>
-                        </Carousel.Caption>
-                    </Jumbotron>
+                            <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Jumbotron>
                     </Carousel.Item>
                     <Carousel.Item>
                         <Jumbotron style={{backgroundColor: 'black', width: '1300px', maxWidth: '1300px', margin: 'auto'}}>
@@ -365,6 +379,20 @@ export class Menu extends React.Component {
                                                         <div>
                                                             How to do it?
                                                         </div>
+                                                    </p>
+                                                </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col style={{paddingTop: '50px'}}>
+                                        <Card style={{ width: '1078px', maxWidth: '1078px', margin: 'auto'}}>
+                                            <Card.Body>
+                                                <Card.Title>Snacks</Card.Title>
+                                                <Card.Text>
+                                                    <p>
+
                                                     </p>
                                                 </Card.Text>
                                             </Card.Body>
@@ -546,6 +574,20 @@ export class Menu extends React.Component {
                                                         <div>
                                                             How to do it?
                                                         </div>
+                                                    </p>
+                                                </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col style={{paddingTop: '50px'}}>
+                                        <Card style={{ width: '1078px', maxWidth: '1078px', margin: 'auto'}}>
+                                            <Card.Body>
+                                                <Card.Title>Snacks</Card.Title>
+                                                <Card.Text>
+                                                    <p>
+
                                                     </p>
                                                 </Card.Text>
                                             </Card.Body>
@@ -727,6 +769,20 @@ export class Menu extends React.Component {
                                                         <div>
                                                             How to do it?
                                                         </div>
+                                                    </p>
+                                                </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col style={{paddingTop: '50px'}}>
+                                        <Card style={{ width: '1078px', maxWidth: '1078px', margin: 'auto'}}>
+                                            <Card.Body>
+                                                <Card.Title>Snacks</Card.Title>
+                                                <Card.Text>
+                                                    <p>
+
                                                     </p>
                                                 </Card.Text>
                                             </Card.Body>
@@ -908,6 +964,20 @@ export class Menu extends React.Component {
                                                         <div>
                                                             How to do it?
                                                         </div>
+                                                    </p>
+                                                </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col style={{paddingTop: '50px'}}>
+                                        <Card style={{ width: '1078px', maxWidth: '1078px', margin: 'auto'}}>
+                                            <Card.Body>
+                                                <Card.Title>Snacks</Card.Title>
+                                                <Card.Text>
+                                                    <p>
+
                                                     </p>
                                                 </Card.Text>
                                             </Card.Body>
@@ -1089,6 +1159,20 @@ export class Menu extends React.Component {
                                                         <div>
                                                             How to do it?
                                                         </div>
+                                                    </p>
+                                                </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col style={{paddingTop: '50px'}}>
+                                        <Card style={{ width: '1078px', maxWidth: '1078px', margin: 'auto'}}>
+                                            <Card.Body>
+                                                <Card.Title>Snacks</Card.Title>
+                                                <Card.Text>
+                                                    <p>
+
                                                     </p>
                                                 </Card.Text>
                                             </Card.Body>
@@ -1276,30 +1360,29 @@ export class Menu extends React.Component {
                                         </Card>
                                     </Col>
                                 </Row>
+                                <Row>
+                                    <Col style={{paddingTop: '50px'}}>
+                                        <Card style={{ width: '1078px', maxWidth: '1078px', margin: 'auto'}}>
+                                            <Card.Body>
+                                                <Card.Title>Snacks</Card.Title>
+                                                <Card.Text>
+                                                    <p>
+
+                                                    </p>
+                                                </Card.Text>
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
+                                </Row>
                             </Container>
                             <Carousel.Caption>
                             </Carousel.Caption>
                         </Jumbotron>
                     </Carousel.Item>
                 </Carousel>
-                <p>
-                    <Container style={{width: '290px', maxWidth: '290px', margin: 'auto'}}>
-                        <Form>
-                            <Form.Group controlId="formBasicCheckbox">
-                                <Form.Check type="checkbox" label="Sync my meal plan with calendar" />
-                            </Form.Group>
-                        </Form>
-                    </Container>
-                </p>
-                <p>
-                    <Button style={{width: '400px', maxWidth: '400px', margin: 'auto'}} href="./shopping-list" variant="outline-info" size="lg" block>Confirm</Button>
-                </p>
-                <p>
-                    <Button style={{width: '400px', maxWidth: '400px', margin: 'auto'}} href="./logged-in-home" variant="outline-danger" size="lg" block>Cancel</Button>
-                </p>
             </div>
         );
     }
 }
 
-export default Menu;
+export default ChosenDiet;
