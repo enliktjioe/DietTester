@@ -15,6 +15,43 @@ export class LoggedInHome extends React.Component {
                         Pick a new diet to try
                     </h1>
                     <CardDeck>
+
+                        <Card>
+                            <Card.Body>
+                                <Card.Title>Ketogenic</Card.Title>
+                                <hr/>
+                                <Card.Text className="text-secondary">
+                                    The ketogenic diet aims to minimize the consumption of carbohydrates and instead
+                                    prefers foods with a high fat and protein content.
+                                    Originally developed for epilepsy treatment, various research has shown it to
+                                    also be an
+                                    effective way to lose weight and lower risk factors for disease.
+                                    Ketogenic diet relies on meats, fish, eggs, nuts and seeds, butter, cream,
+                                    healthy oils, avocados and low-carbohydrate vegetables.
+                                </Card.Text>
+
+                            </Card.Body>
+                            <Card.Footer>
+                                <Button variant="outline-success" size="lg">Go ketogenic</Button>
+                            </Card.Footer>
+                        </Card>
+
+                        <Card>
+                            <Card.Body>
+                                <Card.Title>Vegetarian</Card.Title>
+                                <hr/>
+                                <Card.Text className="text-secondary">
+                                    Vegetarians abstain from the consumption of meat. Unlike vegans, dairy
+                                    products and eggs are allowed.
+                                    A well-planned vegetarian diet is healthy, nutritionally adequate, and may be
+                                    beneficial in the prevention and treatment of certain diseases.
+                                </Card.Text>
+                            </Card.Body>
+                            <Card.Footer>
+                                <Button variant="outline-success" size="lg">Go vegetarian</Button>
+                            </Card.Footer>
+                        </Card>
+
                         <Card>
                             <Card.Body>
                                 <Card.Title>Vegan</Card.Title>
@@ -32,40 +69,7 @@ export class LoggedInHome extends React.Component {
                                     vegan</Button>
                             </Card.Footer>
                         </Card>
-                        <Card>
-                            <Card.Body>
-                                <Card.Title>Vegetarian</Card.Title>
-                                <hr/>
-                                <Card.Text className="text-secondary">
-                                    Vegetarians abstain from the consumption of meat. Unlike vegans, dairy
-                                    products and eggs are allowed.
-                                    A well-planned vegetarian diet is healthy, nutritionally adequate, and may be
-                                    beneficial in the prevention and treatment of certain diseases.
-                                </Card.Text>
-                            </Card.Body>
-                            <Card.Footer>
-                                <Button variant="outline-success" size="lg" disabled>Go vegetarian</Button>
-                            </Card.Footer>
-                        </Card>
-                        <Card>
-                            <Card.Body>
-                                <Card.Title>Ketogenic</Card.Title>
-                                <hr/>
-                                <Card.Text className="text-secondary">
-                                    The ketogenic diet aims to minimize the consumption of carbohydrates and instead
-                                    prefers foods with a high fat and protein content.
-                                    Originally developed for epilepsy treatment, various research has shown it to
-                                    also be an
-                                    effective way to lose weight and lower risk factors for disease.
-                                    Ketogenic diet relies on meats, fish, eggs, nuts and seeds, butter, cream,
-                                    healthy oils, avocados and low-carbohydrate vegetables.
-                                </Card.Text>
 
-                            </Card.Body>
-                            <Card.Footer>
-                                <Button variant="outline-success" size="lg" disabled>Go ketogenic</Button>
-                            </Card.Footer>
-                        </Card>
                     </CardDeck>
 
                     <hr/>
@@ -90,7 +94,7 @@ export class LoggedInHome extends React.Component {
 
                             </Card.Body>
                             <Card.Footer>
-                                <Button variant="outline-success" size="lg" disabled>Go macrobiotic</Button>
+                                <Button variant="outline-success" size="lg">Go macrobiotic</Button>
                             </Card.Footer>
                         </Card>
                         <Card>
@@ -112,7 +116,7 @@ export class LoggedInHome extends React.Component {
 
                             </Card.Body>
                             <Card.Footer>
-                                <Button variant="outline-success" size="lg" disabled>Go low sugar</Button>
+                                <Button variant="outline-success" size="lg">Go low sugar</Button>
                             </Card.Footer>
                         </Card>
                         <Card>
@@ -132,7 +136,7 @@ export class LoggedInHome extends React.Component {
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
-                                <Button variant="outline-success" size="lg" disabled>Go paleo</Button>
+                                <Button variant="outline-success" size="lg">Go paleo</Button>
                             </Card.Footer>
                         </Card>
                     </CardDeck>
