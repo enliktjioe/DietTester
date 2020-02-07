@@ -452,18 +452,13 @@ export class ShoppingList extends React.Component {
                     </Row>
                     <hr/>
                     <br/>
-                    <Row>
-                        <Col/>
-                        <Col>
-                            <Button style={{width: '50vh'}} variant="outline-info" size="lg" variant="outline-success"
-                                    block>Send to Phone</Button>
-                        </Col>
-                        <Col>
-                            <Button style={{width: '50vh'}} href="./my-diet" variant="outline-info" size="lg"
-                                    block>DONE</Button>
-                        </Col>
-                    </Row>
-                    <Row></Row>
+
+                    <p>
+                        <Button variant="outline-warning" size="lg" block>Send to Phone</Button>
+                    </p>
+                    <p>
+                        <Button  href="./my-diet" variant="outline-success" size="lg" block>Confirm my 7-day meal plan</Button>
+                    </p>
                     <br/>
                     <br/>
                     <br/>
