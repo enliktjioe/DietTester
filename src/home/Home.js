@@ -34,7 +34,7 @@ export class Home extends React.Component {
                 <section id="main">
                     <br/> <br/><br/>
                     <div className="main-text">
-                        Testing new diets <span>Simplified</span>
+                        Testing new diets <span>simplified</span>
                     </div>
                     <div className="sub-main-text">
                         Find your diet plan<br/>
