@@ -34,7 +34,7 @@ export class Home extends React.Component {
                 <section id="main">
                     <br/> <br/><br/>
                     <div className="main-text">
-                        Give your body an <span>experience</span>
+                        Testing new diets <span>simplified</span>
                     </div>
                     <div className="sub-main-text">
                         Find your diet plan<br/>
@@ -45,7 +45,7 @@ export class Home extends React.Component {
                     </div>
                     <br/> <br/>
                     <div className="call-to-action">
-                        <Button href='./logged-in-home' size='lg' variant="outline-success">GET STARTED WITH YOUR FREE
+                        <Button href='./logged-in-home' size='lg' variant="success">GET STARTED WITH YOUR FREE
                             7-DAY PLAN</Button>
                     </div>
                     <br/><br/>
