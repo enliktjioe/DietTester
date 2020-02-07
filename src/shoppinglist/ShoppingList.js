@@ -21,7 +21,6 @@ export class ShoppingList extends React.Component {
                     </Media.Body>
                 </Media>
                 <br/>
-
                 <Container>
                     <hr/>
                     <Row>
@@ -37,7 +36,19 @@ export class ShoppingList extends React.Component {
                                                 <InputGroup.Prepend>
                                                     <InputGroup.Checkbox aria-label="Tomatoes"/>
                                                 </InputGroup.Prepend>
-                                                <InputGroup.Text id="inputGroup-sizing-sm">Tomatoes</InputGroup.Text>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">10 Medium Tomatoes</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Tomatoes"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">5 cans of Plum tomatoes (400g each)</InputGroup.Text>
+                                            </InputGroup>
+                                            <InputGroup className="mb-3">
+                                                <InputGroup.Prepend>
+                                                    <InputGroup.Checkbox aria-label="Tomatoes"/>
+                                                </InputGroup.Prepend>
+                                                <InputGroup.Text id="inputGroup-sizing-sm">400g Cherry tomatoes</InputGroup.Text>
                                             </InputGroup>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
@@ -308,12 +319,12 @@ export class ShoppingList extends React.Component {
                     <hr/>
                     <Row>
                         <Col sm>
-                            <Accordion defaultActiveKey="0">
+                            <Accordion defaultActiveKey="1">
                                 <Card>
                                     <Accordion.Toggle as={Card.Header} variant="link" eventKey="1">
                                         Fruits
                                     </Accordion.Toggle>
-                                    <Accordion.Collapse eventKey="0">
+                                    <Accordion.Collapse eventKey="1">
                                         <Card.Body>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
@@ -378,12 +389,12 @@ export class ShoppingList extends React.Component {
                         <Col sm={2}></Col>
 
                         <Col sm>
-                            <Accordion defaultActiveKey="0">
+                            <Accordion defaultActiveKey="1">
                                 <Card>
                                     <Accordion.Toggle as={Card.Header} variant="link" eventKey="1">
                                         Beans & Nuts
                                     </Accordion.Toggle>
-                                    <Accordion.Collapse eventKey="0">
+                                    <Accordion.Collapse eventKey="1">
                                         <Card.Body>
                                             <InputGroup className="mb-3">
                                                 <InputGroup.Prepend>
@@ -460,9 +471,9 @@ export class ShoppingList extends React.Component {
                     <hr/>
                     <br/>
                     <Row>
-                        <Col></Col>
+                        <Col/>
                         <Col>
-                            <Button style={{width: '50vh'}} variant="outline-info" size="lg" variant="outline-warning"
+                            <Button style={{width: '50vh'}} variant="outline-info" size="lg" variant="outline-success"
                                     disabled>Send to Phone</Button>
                         </Col>
                         <Col>
@@ -471,6 +482,9 @@ export class ShoppingList extends React.Component {
                         </Col>
                     </Row>
                     <Row></Row>
+                    <br/>
+                    <br/>
+                    <br/>
                 </Container>
             </div>
 

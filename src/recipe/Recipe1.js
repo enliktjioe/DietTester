@@ -26,7 +26,7 @@ export class Recipe1 extends React.Component {
                 <NavBarLoggedIn/>
                 <div id="recipe">
                     <h1 className="recipe-title">
-                        Lentil stroganoff (Oil-free, GF)
+                        Lentil Stroganoff (Oil-free, GF)
                         <h5><Badge variant="success">41 minutes</Badge>{' '}</h5>
                     </h1>
 
@@ -65,7 +65,7 @@ export class Recipe1 extends React.Component {
                             </Card.Body>
                         </Card>
                         <br/>
-                        <Button href="/menu" variant="outline-success" size="lg" block>Back to diet plan</Button>
+                        <Button href="/my-diet" variant="outline-success" size="lg" block>Back to diet plan</Button>
                     </Container>
                 </div>
             </div>
